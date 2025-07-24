@@ -1,0 +1,1085 @@
+/* [EN] Theme created by Loïc Guégant for gmusicbrowser, distributed under the GNU/GPL license. See README.odt file. */
+/* [FR] Thème créé par Loïc Guégant pour gmusicbrowser, distribué sous licence GNU/GPL. Voir fichier LISEZ-MOI.odt. */
+
+/* [EN] SONG BROWSER - Browser */
+/* [FR] EXPLORATEUR DE MORCEAUX - Explorateur */
+#Browser > #VBmain {
+	margin: 0 -1px -5px 0;
+	min-width: 1400px;
+	min-height: 800px;
+}
+#Browser > #VBmain * {
+	border: unset;
+	outline-width: unset;
+	-gtk-icon-shadow: unset;
+	box-shadow: unset;
+	color: black;
+	caret-color: black;
+}
+#Browser > #VBmain window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#Browser > #VBmain window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#Browser > #VBmain window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#Browser > #VBmain window > menu > menuitem > arrow,
+#Browser > #VBmain window > menu > menuitem > check,
+#Browser > #VBmain window > menu > menuitem > label,
+#Browser > #VBmain window > menu > menuitem > radio {
+	color: white;
+}
+#Browser > #VBmain window > menu > menuitem > radio,
+#Browser > #VBmain window > menu > menuitem > check {
+	border: solid 1px white;
+}
+#Browser > #VBmain window > menu {
+	background: #344665;
+	background: linear-gradient(0deg,rgba(52, 70, 101, 1) 0%, rgba(158, 175, 204, 1) 100%);
+}
+	#Browser > #VBmain #Total {
+		margin: 2px 5px;
+		padding: 0 10px;
+		background: unset;
+	}
+	#Browser > #VBmain #Total:hover {
+		box-shadow: inset 0 0 4px black;
+	}
+	#Browser > #VBmain #Total > label {
+		color: lightgrey;
+	}
+	#Browser > #VBmain #Total > button:hover {
+		border-radius: 2px;
+		box-shadow: inset 0 0 4px black;
+	}
+
+#Browser > #VBmain > #HBstatus {
+	margin: 0;
+	padding: 0;
+	background: #3d434d;
+}
+#Browser > #VBmain > #HBstatus > button {
+	margin: 2px 0;
+	background: #3d434d;
+	box-shadow: unset;
+}
+#Browser > #VBmain > #HBstatus > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#Browser > #VBmain > #HBstatus > button:checked {
+	box-shadow: inset 0 0 5px #1e2126;
+}
+#Browser > #VBmain > #HBstatus > #FilterLock {
+	background: url("images/gmb-lockopen.png") center no-repeat;
+}
+#Browser > #VBmain > #HBstatus > #FilterLock:checked {
+	background: url("images/gmb-lock.png") center no-repeat;
+	box-shadow: inset 0 0 5px #222;
+}
+#Browser > #VBmain > #HBstatus > #FilterLock:checked:hover {
+	background: url("images/gmb-locklight.png") center no-repeat;
+	box-shadow: inset 0 0 4px black;
+}
+#Browser > #VBmain > #HBstatus > #MBlist {
+	margin: 5px;
+	border-radius: 15px;
+	background: #798599;
+}
+#Browser > #VBmain > #HBstatus  > #MBlist > menuitem {
+	margin: -3px 0;
+}
+#Browser > #VBmain > #HBstatus  > #MBlist > menuitem > label {
+	color: white;
+}
+#Browser > #VBmain > #HBstatus > #Total > label {
+	color: white;
+}
+#Browser > #VBmain > #HPbig > #HPfp {
+	margin: -2px 0 0;
+}
+#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > treeview {
+	background: #e4eaf4;
+}
+#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header {
+		margin-top: 2px;
+		padding-bottom: 3px;
+		border: none;
+		background: rgb(0,0,0);
+		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(157,157,157,1) 100%);
+	}
+	/* [EN] ... including the tabs */
+	/* [FR] ... dont les onglets */
+	#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs {
+		margin: -1px 0 -2px 0;
+		background: unset;
+	}
+		#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > arrow {
+			margin: 0;
+			padding: 3px;
+			color: grey;
+			background: unset;
+		}
+		#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > arrow:hover {
+			color: black;
+			box-shadow: inset 0 0 5px black;
+			border-radius: 5px;
+			background: unset;
+		}
+		#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab {
+			margin: 4px 4px 2px 4px;
+			padding: 0 5px;
+			border-radius: 15px;
+			background: #5b5b5b;
+			box-shadow: inset 0 2px 4px #999999, 0 2px 3px black;
+		}
+		#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab:hover {
+			box-shadow: inset 0 0 4px black;
+		}
+		/* [EN] ... including the active tab */
+		/* [FR] ... dont l'onglet actif */
+		#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab:checked {
+			margin: 5px 4px -1px 4px;
+			padding: 0 5px;
+			background: #e4eaf4;
+			border: none;
+			border-radius: 15px 15px 0 0;
+			box-shadow: inset 0 8px 5px -5px black;	
+		}
+		#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab:checked * {
+			color: black;
+			text-shadow: -1px -1px 2px #8f9399;
+			font-weight: bold;
+		}
+	#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack > box > scrolledwindow *{
+		background: unset;
+	}
+	#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack > box > scrolledwindow {
+		background: #e4eaf4;
+		background: linear-gradient(rgba(228, 234, 244, 1) 0%, rgba(189, 212, 252, 1) 100%);
+	}
+	#Browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane:first-child > notebook > stack > box > scrolledwindow {
+		background: #e4eaf4;
+		background: linear-gradient(rgba(228, 234, 244, 1) 0%, rgba(173, 203, 255, 1) 100%);
+	}
+	#Browser > #VBmain > #HPbig > separator,
+	#Browser > #VBmain > #HPbig > #HPfp > separator {
+		background: black;
+	}
+#Browser > #VBmain > #HPbig > #HPfp > #FilterPane button > label {
+			color: black;
+		}
+		/* [EN] ...and their context menus */
+		/* [FR] ... et leurs menus contextuels */
+#Browser > #VBmain > #HPbig > #HPfp > #FilterPane tab label {
+			color: #f6f3ed;
+		}
+
+#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack treeview {
+			background: #e4eaf4;
+		}
+#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack treeview:selected {
+			background: #b7c7e0;
+ 			color: black;
+		}
+#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > box {
+	padding: 0 5px 5px;
+}
+#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > box > spinbutton,
+#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > box > button {
+	border: none;
+	background: lightgrey;
+	box-shadow: inset 0 0 2px black, 0 0 2px grey;
+}
+#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > box > button:hover {
+		background: grey;
+		box-shadow: inset 0 0 2px black, 0 0 2px grey;
+	}
+#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > box > spinbutton:checked,
+#Browser > #VBmain > #HPbig > #HPfp > #FilterPane > box > button:checked {
+	background: #666666;
+}
+#Browser > #VBmain > #HPbig > #VPlistAA > #HBAA {
+	background: #b8c9e6;
+}
+#Browser > #VBmain > #HPbig > #VPlistAA > #HBAA > #ArtistBox > box > box > button {
+	background: unset;
+}
+#Browser > #VBmain > #HPbig > #VPlistAA > #HBAA > #ArtistBox > box > box > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#Browser > #VBmain > #HPbig > #VPlistAA > #HBAA > #AlbumBox > box > box > button {
+	background: unset;
+}
+#Browser > #VBmain > #HPbig > #VPlistAA > #HBAA > #AlbumBox > box > box > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#Browser > #VBmain > #HPbig > #VPlistAA > #SongList treeview {
+	background: #f2f7ff;
+}
+#Browser > #VBmain > #HPbig > #VPlistAA > #SongList treeview > header > button {
+	background: #637899;
+}
+#Browser > #VBmain > #HPbig > #VPlistAA > #SongList > treeview > treeview:selected {
+	background: #a2b1cc;
+	color: black;
+}
+#Browser > #VBmain > paned > paned > box,
+#Browser > #VBmain > paned > paned > paned > box {
+	background: #666f80;
+}
+#Browser > #VBmain > #HPbig {
+	margin: -6px 0 0;
+	padding: 0;
+}
+
+#Browser > popover > image {
+	margin: 0 -2px -2px;
+	padding: 15px;
+	background: #b8c9e6;
+	box-shadow: inset 0 0 120px 40px #303133, 0 0 10px #001333;
+	border: solid 5px #494a4d;
+	border-radius: 5px;
+}
+
+/* [EN] SONG BROWSER - Smaller Browser */
+/* [FR] EXPLORATEUR DE MORCEAUX - Explorateur plus petit */
+#Smaller_browser > #VBmain {
+	margin: 0 -1px -5px 0;
+	min-width: 1280px;
+	min-height: 800px;
+}
+#Smaller_browser > #VBmain * {
+	border: unset;
+	outline-width: unset;
+	-gtk-icon-shadow: unset;
+	box-shadow: unset;
+	color: black;
+	caret-color: black;
+}
+#Smaller_browser > #VBmain window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#Smaller_browser > #VBmain window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#Smaller_browser > #VBmain window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#Smaller_browser > #VBmain window > menu > menuitem > arrow,
+#Smaller_browser > #VBmain window > menu > menuitem > check,
+#Smaller_browser > #VBmain window > menu > menuitem > label,
+#Smaller_browser > #VBmain window > menu > menuitem > radio {
+	color: white;
+}
+#Smaller_browser > #VBmain window > menu > menuitem > radio,
+#Smaller_browser > #VBmain window > menu > menuitem > check {
+	border: solid 1px white;
+}
+#Smaller_browser > #VBmain window > menu {
+	background: #344665;
+	background: linear-gradient(0deg,rgba(52, 70, 101, 1) 0%, rgba(158, 175, 204, 1) 100%);
+}
+	#Smaller_browser > #VBmain #Total {
+		margin: 2px 5px;
+		padding: 0 10px;
+		background: unset;
+	}
+	#Smaller_browser > #VBmain #Total:hover {
+		box-shadow: inset 0 0 4px black;
+	}
+	#Smaller_browser > #VBmain #Total > label {
+		color: lightgrey;
+	}
+	#Smaller_browser > #VBmain #Total > button:hover {
+		border-radius: 2px;
+		box-shadow: inset 0 0 4px black;
+	}
+
+#Smaller_browser > #VBmain > #HBstatus {
+	margin: 0;
+	padding: 0;
+	background: #3d434d;
+}
+#Smaller_browser > #VBmain > #HBstatus > button {
+	margin: 2px 0;
+	background: #3d434d;
+	box-shadow: unset;
+}
+#Smaller_browser > #VBmain > #HBstatus > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#Smaller_browser > #VBmain > #HBstatus > button:checked {
+	box-shadow: inset 0 0 5px #1e2126;
+}
+#Smaller_browser > #VBmain > #HBstatus > #FilterLock {
+	background: url("images/gmb-lockopen.png") center no-repeat;
+}
+#Smaller_browser > #VBmain > #HBstatus > #FilterLock:checked {
+	background: url("images/gmb-lock.png") center no-repeat;
+	box-shadow: inset 0 0 5px #222;
+}
+#Smaller_browser > #VBmain > #HBstatus > #FilterLock:checked:hover {
+	background: url("images/gmb-locklight.png") center no-repeat;
+	box-shadow: inset 0 0 4px black;
+}
+#Smaller_browser > #VBmain > #HBstatus > #MBlist {
+	margin: 5px;
+	border-radius: 15px;
+	background: #798599;
+}
+#Smaller_browser > #VBmain > #HBstatus  > #MBlist > menuitem {
+	margin: -3px 0;
+}
+#Smaller_browser > #VBmain > #HBstatus  > #MBlist > menuitem > label {
+	color: white;
+}
+#Smaller_browser > #VBmain > #HBstatus > #Total > label {
+	color: white;
+}
+#Smaller_browser > #VBmain > #HPbig > #VPlistAA > #HBAA {
+	background: #b8c9e6;
+}
+#Smaller_browser > #VBmain > #HPbig > #VPlistAA > #HBAA > #ArtistBox > box > box > button {
+	background: unset;
+}
+#Smaller_browser > #VBmain > #HPbig > #VPlistAA > #HBAA > #ArtistBox > box > box > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#Smaller_browser > #VBmain > #HPbig > #VPlistAA > #HBAA > #AlbumBox > box > box > button {
+	background: unset;
+}
+#Smaller_browser > #VBmain > #HPbig > #VPlistAA > #HBAA > #AlbumBox > box > box > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#Smaller_browser > #VBmain > #HPbig > #VPlistAA > #VBleft > #SongList treeview {
+	background: #f2f7ff;
+}
+#Smaller_browser > #VBmain > #HPbig > #VPlistAA > #VBleft > #SongList treeview > header > button {
+	background: #637899;
+}
+/*#Smaller_browser > #VBmain > #HPbig > #VPlistAA > #VBleft > #SongList treeview > header > button > box > widget > label,
+#Smaller_browser > #VBmain > #HPbig > #VPlistAA > #VBleft > #SongList treeview > header > button > box > image {
+	color: white;
+}*/
+#Smaller_browser > #VBmain > #HPbig > #VPlistAA > #VBleft > #SongList > treeview > treeview:selected {
+	background: #a2b1cc;
+	color: black;
+}
+/*#Smaller_browser > #VBmain > #HPbig > #VPlistAA > #VBleft > #Total {
+	box-shadow: inset 0 0 4px rgba(255, 255, 255, .3);
+}*/
+#Smaller_browser > #VBmain > #HPbig > #VPlistAA > #VBleft > #Total:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#Smaller_browser > #VBmain > paned > paned > box,
+#Smaller_browser > #VBmain > paned > paned > paned > box {
+	background: #666f80;
+}
+#Smaller_browser > #VBmain > #HPbig {
+	margin: -6px 0 0;
+	padding: 0;
+}
+#Smaller_browser > #VBmain > #HPbig > #HPfp {
+	margin: -2px 0 0;
+}
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > treeview,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > treeview {
+	background: #e4eaf4;
+}
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header {
+		margin-top: 2px;
+		padding-bottom: 3px;
+		border: none;
+		background: rgb(0,0,0);
+		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(157,157,157,1) 100%);
+	}
+	/* [EN] ... including the tabs */
+	/* [FR] ... dont les onglets */
+	#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs,
+	#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs {
+		margin: -1px 0 -2px 0;
+	}
+		#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > arrow,
+		#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > arrow {
+			margin: 0;
+			padding: 3px;
+			color: grey;
+			background: unset;
+		}
+		#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > arrow:hover,
+		#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > arrow:hover {
+			color: black;
+			box-shadow: inset 0 0 5px black;
+			border-radius: 5px;
+			background: unset;
+		}
+		#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab,
+		#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > tab {
+			margin: 4px 4px 2px 4px;
+			padding: 0 5px;
+			border-radius: 15px;
+			background: #5b5b5b;
+			box-shadow: inset 0 2px 4px #999999, 0 2px 3px black;
+		}
+		#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab:hover,
+		#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > tab:hover {
+			box-shadow: inset 0 0 4px black;
+		}
+		/* [EN] ... including the active tab */
+		/* [FR] ... dont l'onglet actif */
+		#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab:checked,
+		#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > tab:checked {
+			margin: 5px 4px -1px 4px;
+			padding: 0 5px;
+			background: #e4eaf4;
+			border: none;
+			border-radius: 15px 15px 0 0;
+			box-shadow: inset 0 8px 5px -5px black;	
+		}
+		#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab:checked *,
+		#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > tab:checked * {
+			color: black;
+			text-shadow: -1px -1px 2px #8f9399;
+			font-weight: bold;
+		}
+	#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > box * {
+		background: unset;
+	}
+	#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack > box > scrolledwindow *,
+	#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > scrolledwindow * {
+		background: unset;
+	}
+	#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack > box > scrolledwindow {
+		background: #e4eaf4;
+		background: linear-gradient(rgba(228, 234, 244, 1) 0%, rgba(189, 212, 252, 1) 100%);
+	}
+	#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane:first-child > notebook > stack > box > scrolledwindow {
+		background: #e4eaf4;
+		background: linear-gradient(rgba(228, 234, 244, 1) 0%, rgba(173, 203, 255, 1) 100%);
+	}
+	#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > box > *,
+	#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > scrolledwindow {
+		background: #e4eaf4;
+		background: linear-gradient(rgba(228, 234, 244, 1) 0%, rgba(143, 184, 255, 1) 100%);
+	}
+	#Smaller_browser > #VBmain > #HPbig > separator,
+	#Smaller_browser > #VBmain > #HPbig > #HPfp > separator,
+	#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > separator {
+		background: black;
+	}
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane button > label,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane button > label {
+			color: black;
+		}
+		/* [EN] ...and their context menus */
+		/* [FR] ... et leurs menus contextuels */
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane tab label,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane tab label {
+			color: #f6f3ed;
+		}
+
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack treeview,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack treeview {
+			background: #e4eaf4;
+		}
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack treeview:selected,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack treeview:selected {
+			background: #b7c7e0;
+ 			color: black;
+		}
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > box,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box {
+	padding: 0 5px 5px;
+}
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > box > spinbutton,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > spinbutton,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > box > button,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > button {
+	border: none;
+	background: lightgrey;
+	box-shadow: inset 0 0 2px black, 0 0 2px grey;
+}
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > box > button:hover,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > button:hover {
+		background: grey;
+		box-shadow: inset 0 0 2px black, 0 0 2px grey;
+	}
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > box > spinbutton:checked,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > spinbutton:checked,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #FilterPane > box > button:checked,
+#Smaller_browser > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > button:checked {
+	background: #666666;
+}
+#Smaller_browser > popover > image {
+	margin: 0 -2px -2px;
+	padding: 15px;
+	background: #b8c9e6;
+	box-shadow: inset 0 0 120px 40px #303133, 0 0 10px #001333;
+	border: solid 5px #494a4d;
+	border-radius: 5px;
+}
+
+/* [EN] SONG BROWSER - 3 filter panes */
+/* [FR] EXPLORATEUR DE MORCEAUX - 3 panneaux de filtres */
+#3_Filter_panes > #VBmain {
+	margin: 0 -1px -5px 0;
+	min-width: 1700px;
+	min-height: 800px;
+}
+#3_Filter_panes > #VBmain * {
+	border: unset;
+	outline-width: unset;
+	-gtk-icon-shadow: unset;
+	box-shadow: unset;
+	color: black;
+	caret-color: black;
+}
+#3_Filter_panes > #VBmain window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#3_Filter_panes > #VBmain window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#3_Filter_panes > #VBmain window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#3_Filter_panes > #VBmain window > menu > menuitem > arrow,
+#3_Filter_panes > #VBmain window > menu > menuitem > check,
+#3_Filter_panes > #VBmain window > menu > menuitem > label,
+#3_Filter_panes > #VBmain window > menu > menuitem > radio {
+	color: white;
+}
+#3_Filter_panes > #VBmain window > menu > menuitem > radio,
+#3_Filter_panes > #VBmain window > menu > menuitem > check {
+	border: solid 1px white;
+}
+#3_Filter_panes > #VBmain window > menu {
+	background: #344665;
+	background: linear-gradient(0deg,rgba(52, 70, 101, 1) 0%, rgba(158, 175, 204, 1) 100%);
+}
+	#3_Filter_panes > #VBmain #Total {
+		margin: 2px 5px;
+		padding: 0 10px;
+		background: unset;
+	}
+	#3_Filter_panes > #VBmain #Total:hover {
+		box-shadow: inset 0 0 4px black;
+	}
+	#3_Filter_panes > #VBmain #Total > label {
+		color: lightgrey;
+	}
+	#3_Filter_panes > #VBmain #Total > button:hover {
+		border-radius: 2px;
+		box-shadow: inset 0 0 4px black;
+	}
+
+#3_Filter_panes > #VBmain > #HBstatus {
+	margin: 0;
+	padding: 0;
+	background: #3d434d;
+}
+#3_Filter_panes > #VBmain > #HBstatus > button {
+	margin: 2px 0;
+	background: #3d434d;
+	box-shadow: unset;
+}
+#3_Filter_panes > #VBmain > #HBstatus > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#3_Filter_panes > #VBmain > #HBstatus > button:checked {
+	box-shadow: inset 0 0 5px #1e2126;
+}
+#3_Filter_panes > #VBmain > #HBstatus > #FilterLock {
+	background: url("images/gmb-lockopen.png") center no-repeat;
+}
+#3_Filter_panes > #VBmain > #HBstatus > #FilterLock:checked {
+	background: url("images/gmb-lock.png") center no-repeat;
+	box-shadow: inset 0 0 5px #222;
+}
+#3_Filter_panes > #VBmain > #HBstatus > #FilterLock:checked:hover {
+	background: url("images/gmb-locklight.png") center no-repeat;
+	box-shadow: inset 0 0 4px black;
+}
+#3_Filter_panes > #VBmain > #HBstatus > #MBlist {
+	margin: 5px;
+	border-radius: 15px;
+	background: #798599;
+}
+#3_Filter_panes > #VBmain > #HBstatus  > #MBlist > menuitem {
+	margin: -3px 0;
+}
+#3_Filter_panes > #VBmain > #HBstatus  > #MBlist > menuitem > label {
+	color: white;
+}
+#3_Filter_panes > #VBmain > #HBstatus > #Total > label {
+	color: white;
+}
+#3_Filter_panes > #VBmain > #HPbig > #VPlistAA > #HBAA {
+	background: #b8c9e6;
+}
+#3_Filter_panes > #VBmain > #HPbig > #VPlistAA > #HBAA > #ArtistBox > box > box > button {
+	background: unset;
+}
+#3_Filter_panes > #VBmain > #HPbig > #VPlistAA > #HBAA > #ArtistBox > box > box > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#3_Filter_panes > #VBmain > #HPbig > #VPlistAA > #HBAA > #AlbumBox > box > box > button {
+	background: unset;
+}
+#3_Filter_panes > #VBmain > #HPbig > #VPlistAA > #HBAA > #AlbumBox > box > box > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#3_Filter_panes > #VBmain > #HPbig > #VPlistAA > #SongList > treeview {
+	background: #f2f7ff;
+}
+#3_Filter_panes > #VBmain > #HPbig > #VPlistAA > #SongList > treeview > header > button {
+	background: #637899;
+}
+/*#3_Filter_panes > #VBmain > #HPbig > #VPlistAA > #SongList > treeview > header > button > box > widget > label,
+#3_Filter_panes > #VBmain > #HPbig > #VPlistAA > #SongList > treeview > header > button > box > image {
+	color: white;
+}*/
+#3_Filter_panes > #VBmain > #HPbig > #VPlistAA > #SongList > treeview > treeview:selected {
+	background: #a2b1cc;
+	color: black;
+}
+#3_Filter_panes > #VBmain > paned > paned > box,
+#3_Filter_panes > #VBmain > paned > paned > paned > box {
+	background: #666f80;
+}
+#3_Filter_panes > #VBmain > #HPbig {
+	margin: -6px 0 0;
+	padding: 0;
+}
+#3_Filter_panes > #VBmain > #HPbig > #HPfp {
+	margin: -2px 0 0;
+}
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > treeview,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > treeview {
+	background: #e4eaf4;
+}
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header {
+		margin-top: 2px;
+		padding-bottom: 3px;
+		border: none;
+		background: rgb(0,0,0);
+		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(157,157,157,1) 100%);
+	}
+	/* [EN] ... including the tabs */
+	/* [FR] ... dont les onglets */
+	#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs,
+	#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs {
+		margin: -1px 0 -2px 0;
+	}
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > arrow,
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > arrow {
+			margin: 0;
+			padding: 3px;
+			color: grey;
+			background: unset;
+		}
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > arrow:hover,
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > arrow:hover {
+			color: black;
+			box-shadow: inset 0 0 5px black;
+			border-radius: 5px;
+			background: unset;
+		}
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab,
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > tab {
+			margin: 4px 4px 2px 4px;
+			padding: 0 5px;
+			border-radius: 15px;
+			background: #5b5b5b;
+			box-shadow: inset 0 2px 4px #999999, 0 2px 3px black;
+		}
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab:hover,
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > tab:hover {
+			box-shadow: inset 0 0 4px black;
+		}
+		/* [EN] ... including the active tab */
+		/* [FR] ... dont l'onglet actif */
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab:checked,
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > tab:checked {
+			margin: 5px 4px -1px 4px;
+			padding: 0 5px;
+			background: #e4eaf4;
+			border: none;
+			border-radius: 15px 15px 0 0;
+			box-shadow: inset 0 8px 5px -5px black;	
+		}
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab:checked *,
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > tab:checked * {
+			color: black;
+			text-shadow: -1px -1px 2px #8f9399;
+			font-weight: bold;
+		}
+	#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > box * {
+		background: unset;
+	}
+	#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack > box > scrolledwindow *,
+	#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > scrolledwindow * {
+		background: unset;
+	}
+	#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack > box > scrolledwindow {
+		background: #e4eaf4;
+		background: linear-gradient(rgba(228, 234, 244, 1) 0%, rgba(189, 212, 252, 1) 100%);
+	}
+	#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane:first-child > notebook > stack > box > scrolledwindow {
+		background: #e4eaf4;
+		background: linear-gradient(rgba(228, 234, 244, 1) 0%, rgba(173, 203, 255, 1) 100%);
+	}
+	#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > box > *,
+	#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > scrolledwindow {
+		background: #e4eaf4;
+		background: linear-gradient(rgba(228, 234, 244, 1) 0%, rgba(143, 184, 255, 1) 100%);
+	}
+	#3_Filter_panes > #VBmain > #HPbig > separator,
+	#3_Filter_panes > #VBmain > #HPbig > #HPfp > separator,
+	#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > separator {
+		background: black;
+	}
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane button > label,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane button > label {
+			color: black;
+		}
+		/* [EN] ...and their context menus */
+		/* [FR] ... et leurs menus contextuels */
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane tab label,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane tab label {
+			color: #f6f3ed;
+		}
+
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack treeview,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack treeview {
+			background: #e4eaf4;
+		}
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack treeview:selected,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack treeview:selected {
+			background: #b7c7e0;
+ 			color: black;
+		}
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > box,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box {
+	padding: 0 5px 5px;
+}
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > box > spinbutton,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > spinbutton,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > box > button,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > button {
+	border: none;
+	background: lightgrey;
+	box-shadow: inset 0 0 2px black, 0 0 2px grey;
+}
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > box > button:hover,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > button:hover {
+		background: grey;
+		box-shadow: inset 0 0 2px black, 0 0 2px grey;
+	}
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > box > spinbutton:checked,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > spinbutton:checked,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > box > button:checked,
+#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > button:checked {
+	background: #666666;
+}
+#3_Filter_panes > popover > image {
+	margin: 0 -2px -2px;
+	padding: 15px;
+	background: #b8c9e6;
+	box-shadow: inset 0 0 120px 40px #303133, 0 0 10px #001333;
+	border: solid 5px #494a4d;
+	border-radius: 5px;
+}
+
+/* [EN] SONG BROWSER - Left-side filter panes */
+/* [FR] EXPLORATEUR DE MORCEAUX - Panneaux de filtres à gauche */
+#left-side_filter_panes > #VBmain {
+	margin: 0 -1px -5px 0;
+	min-width: 1400px;
+	min-height: 800px;
+}
+#left-side_filter_panes > #VBmain * {
+	border: unset;
+	outline-width: unset;
+	-gtk-icon-shadow: unset;
+	box-shadow: unset;
+	color: black;
+	caret-color: black;
+}
+#left-side_filter_panes > #VBmain window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#left-side_filter_panes > #VBmain window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#left-side_filter_panes > #VBmain window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#left-side_filter_panes > #VBmain window > menu > menuitem > arrow,
+#left-side_filter_panes > #VBmain window > menu > menuitem > check,
+#left-side_filter_panes > #VBmain window > menu > menuitem > label,
+#left-side_filter_panes > #VBmain window > menu > menuitem > radio {
+	color: white;
+}
+#left-side_filter_panes > #VBmain window > menu > menuitem > radio,
+#left-side_filter_panes > #VBmain window > menu > menuitem > check {
+	border: solid 1px white;
+}
+#left-side_filter_panes > #VBmain window > menu {
+	background: #344665;
+	background: linear-gradient(0deg,rgba(52, 70, 101, 1) 0%, rgba(158, 175, 204, 1) 100%);
+}
+	#left-side_filter_panes > #VBmain #Total {
+		margin: 2px 5px;
+		padding: 0 10px;
+		background: unset;
+	}
+	#left-side_filter_panes > #VBmain #Total:hover {
+		box-shadow: inset 0 0 4px black;
+	}
+	#left-side_filter_panes > #VBmain #Total > label {
+		color: lightgrey;
+	}
+	#left-side_filter_panes > #VBmain #Total > button:hover {
+		border-radius: 2px;
+		box-shadow: inset 0 0 4px black;
+	}
+
+#left-side_filter_panes > #VBmain > #HBstatus {
+	margin: 0;
+	padding: 0;
+	background: #3d434d;
+}
+#left-side_filter_panes > #VBmain > #HBstatus > button {
+	margin: 2px 0;
+	background: #3d434d;
+	box-shadow: unset;
+}
+#left-side_filter_panes > #VBmain > #HBstatus > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#left-side_filter_panes > #VBmain > #HBstatus > button:checked {
+	box-shadow: inset 0 0 5px #1e2126;
+}
+#left-side_filter_panes > #VBmain > #HBstatus > #FilterLock {
+	background: url("images/gmb-lockopen.png") center no-repeat;
+}
+#left-side_filter_panes > #VBmain > #HBstatus > #FilterLock:checked {
+	background: url("images/gmb-lock.png") center no-repeat;
+	box-shadow: inset 0 0 5px #222;
+}
+#left-side_filter_panes > #VBmain > #HBstatus > #FilterLock:checked:hover {
+	background: url("images/gmb-locklight.png") center no-repeat;
+	box-shadow: inset 0 0 4px black;
+}
+#left-side_filter_panes > #VBmain > #HBstatus > #MBlist {
+	margin: 5px;
+	border-radius: 15px;
+	background: #798599;
+}
+#left-side_filter_panes > #VBmain > #HBstatus  > #MBlist > menuitem {
+	margin: -3px 0;
+}
+#left-side_filter_panes > #VBmain > #HBstatus  > #MBlist > menuitem > label {
+	color: white;
+}
+#left-side_filter_panes > #VBmain > #HBstatus > #Total > label {
+	color: white;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #VPlistAA > #HBAA {
+	background: #b8c9e6;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #VPlistAA > #HBAA > #ArtistBox > box > box > button {
+	background: unset;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #VPlistAA > #HBAA > #ArtistBox > box > box > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #VPlistAA > #HBAA > #AlbumBox > box > box > button {
+	background: unset;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #VPlistAA > #HBAA > #AlbumBox > box > box > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #VPlistAA > #SongList treeview {
+	background: #f2f7ff;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #VPlistAA > #SongList treeview > header > button {
+	background: #637899;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #VPlistAA > #SongList > treeview > treeview:selected {
+	background: #a2b1cc;
+	color: black;
+}
+#left-side_filter_panes > #VBmain > paned > paned > box,
+#left-side_filter_panes > #VBmain > paned > paned > paned > box {
+	background: #666f80;
+}
+#left-side_filter_panes > #VBmain > #HPbig {
+	margin: -6px 0 0;
+	padding: 0;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp {
+	margin: -2px 0 0;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > treeview,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > treeview {
+	background: #e4eaf4;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header {
+		margin-top: 2px;
+		padding-bottom: 3px;
+		border: none;
+		background: rgb(0,0,0);
+		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(157,157,157,1) 100%);
+	}
+	/* [EN] ... including the tabs */
+	/* [FR] ... dont les onglets */
+	#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs,
+	#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs {
+		margin: -1px 0 -2px 0;
+	}
+		#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > arrow,
+		#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > arrow {
+			margin: 0;
+			padding: 3px;
+			color: grey;
+			background: unset;
+		}
+		#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > arrow:hover,
+		#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > arrow:hover {
+			color: black;
+			box-shadow: inset 0 0 5px black;
+			border-radius: 5px;
+			background: unset;
+		}
+		#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab,
+		#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > tab {
+			margin: 4px 4px 2px 4px;
+			padding: 0 5px;
+			border-radius: 15px;
+			background: #5b5b5b;
+			box-shadow: inset 0 2px 4px #999999, 0 2px 3px black;
+		}
+		#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab:hover,
+		#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > tab:hover {
+			box-shadow: inset 0 0 4px black;
+		}
+		/* [EN] ... including the active tab */
+		/* [FR] ... dont l'onglet actif */
+		#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab:checked,
+		#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > tab:checked {
+			margin: 5px 4px -1px 4px;
+			padding: 0 5px;
+			background: #e4eaf4;
+			border: none;
+			border-radius: 15px 15px 0 0;
+			box-shadow: inset 0 8px 5px -5px black;	
+		}
+		#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > header > tabs > tab:checked *,
+		#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > header > tabs > tab:checked * {
+			color: black;
+			text-shadow: -1px -1px 2px #8f9399;
+			font-weight: bold;
+		}
+	#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > box * {
+		background: unset;
+	}
+	#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack > box > scrolledwindow *,
+	#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > scrolledwindow * {
+		background: unset;
+	}
+	#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack > box > scrolledwindow {
+		background: #e4eaf4;
+		background: linear-gradient(rgba(228, 234, 244, 1) 0%, rgba(189, 212, 252, 1) 100%);
+	}
+	#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane:first-child > notebook > stack > box > scrolledwindow {
+		background: #e4eaf4;
+		background: linear-gradient(rgba(228, 234, 244, 1) 0%, rgba(173, 203, 255, 1) 100%);
+	}
+	#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > box > *,
+	#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > scrolledwindow {
+		background: #e4eaf4;
+		background: linear-gradient(rgba(228, 234, 244, 1) 0%, rgba(143, 184, 255, 1) 100%);
+	}
+	#left-side_filter_panes > #VBmain > #HPbig > separator,
+	#left-side_filter_panes > #VBmain > #HPbig > #HPfp > separator,
+	#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > separator {
+		background: black;
+	}
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane button > label,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane button > label {
+			color: black;
+		}
+		/* [EN] ...and their context menus */
+		/* [FR] ... et leurs menus contextuels */
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane tab label,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane tab label {
+			color: #f6f3ed;
+		}
+
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack treeview,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack treeview {
+			background: #e4eaf4;
+		}
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack treeview:selected,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack treeview:selected {
+			background: #b7c7e0;
+ 			color: black;
+		}
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > box,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box {
+	padding: 0 5px 5px;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > box > spinbutton,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > spinbutton,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > box > button,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > button {
+	border: none;
+	background: lightgrey;
+	box-shadow: inset 0 0 2px black, 0 0 2px grey;
+}
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > box > button:hover,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > button:hover {
+		background: grey;
+		box-shadow: inset 0 0 2px black, 0 0 2px grey;
+	}
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > box > spinbutton:checked,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > spinbutton:checked,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > box > button:checked,
+#left-side_filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > box > button:checked {
+	background: #666666;
+}
+#left-side_filter_panes > popover > image {
+	margin: 0 -2px -2px;
+	padding: 15px;
+	background: #b8c9e6;
+	box-shadow: inset 0 0 120px 40px #303133, 0 0 10px #001333;
+	border: solid 5px #494a4d;
+	border-radius: 5px;
+}

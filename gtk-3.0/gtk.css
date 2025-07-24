@@ -1,0 +1,14 @@
+/* [EN] Theme created by Loïc Guégant for gmusicbrowser, distributed under the GNU/GPL license. See README.odt file. */
+/* [FR] Thème créé par Loïc Guégant pour gmusicbrowser, distribué sous licence GNU/GPL. Voir fichier LISEZ-MOI.odt. */
+
+
+@import url("gtk-main.css");
+@import url("gtk-context_window.css");
+@import url("gtk-equalizer.css");
+@import url("gtk-preferences.css");
+@import url("gtk-fullscreen.css");
+@import url("gtk-widget.css");
+@import url("gtk-browser.css");
+@import url("gtk-traytip.css");
+@import url("gtk-makeitlooklike.css");
+@import url("gtk-search.css");

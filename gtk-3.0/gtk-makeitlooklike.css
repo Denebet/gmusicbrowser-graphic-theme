@@ -1,0 +1,25 @@
+/* [EN] Theme created by Loïc Guégant for gmusicbrowser, distributed under the GNU/GPL license. See README.odt file. */
+/* [FR] Thème créé par Loïc Guégant pour gmusicbrowser, distribué sous licence GNU/GPL. Voir fichier LISEZ-MOI.odt. */
+
+/* [EN] Audacious */
+/* [FR] Audacious */
+
+#Audacious > #VBMain > #HBToolbar > #ToggleButton {
+	background-color: unset;
+	background-image: url("images/gmb-menu.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 5px;
+	box-shadow: unset;
+}
+#Audacious > #VBMain > #HBToolbar > #ToggleButton:checked {
+	padding: 0;
+	min-width: 0;
+	background: unset;
+}
+#Audacious > #VBMain > #HBToolbar > #ToggleButton:hover {
+	background-color: lightgrey;
+	background-image: url("images/gmb-menu.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
