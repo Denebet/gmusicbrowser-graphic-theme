@@ -1,0 +1,1 @@
+/var/lib/flatpak/runtime/org.gmusicbrowser.gmusicbrowser.Locale/x86_64/stable/7ce5d4f4f3c406c7c4043f80cc5a8958b22b0637b33a55bc695e73bc38d639f0-fr/files/fr/share/fr/LC_MESSAGES
