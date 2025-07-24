@@ -1,0 +1,3865 @@
+/* [EN] Theme created by Loïc Guégant for gmusicbrowser, distributed under the GNU/GPL license. See README.odt file. */
+/* [FR] Thème créé par Loïc Guégant pour gmusicbrowser, distribué sous licence GNU/GPL. Voir fichier LISEZ-MOI.odt. */
+
+/* [EN] INITIALIZATION (Escape from user session theme rules) */
+/* [FR] INITIALISATION (Échappement aux règles du thème de la session utilisateur) */
+/* * {
+	all: unset;
+}*/
+
+/* [EN] BASIC RULES */
+/* [FR] RÈGLES DE BASE */
+* {
+	/*margin: unset;
+	padding: unset;
+	background: unset;*/
+	border: unset;
+	outline-width: unset;
+	-gtk-icon-shadow: unset;
+	box-shadow: unset;
+	color: black;
+	caret-color: black;
+}
+/* [EN] Checkboxes in general */
+/* [FR] Cases à cocher en général */
+checkbutton > check,
+menuitem > check {
+	color: white;
+	border: solid 1px white;
+	background: rgba(255, 255, 255, .1);
+}
+checkbutton > check:hover {
+	background: rgba(255, 255, 255, .5);
+}
+/*checkbutton > check:checked {
+	background: white;
+}*/
+headerbar, headerbar * {
+	all: unset;
+}
+headerbar {
+	min-height: 28px;
+	padding-bottom: 1px;
+	background: #242424;
+	color: white;
+	border-radius: 5px 5px 0 0;
+}
+headerbar > box > button {
+	margin-top: -2px;
+	padding: 3px;
+	background: #393939;
+	border-radius: 15px;
+}
+headerbar > box > button:hover {
+	background: #454545;
+}
+headerbar > box > label {
+	color: white;
+}
+window > menu {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+window > menu * {
+	color: white;
+}
+window > menu > separator  {
+	margin: 4px 15px;
+	min-height: 1px;
+	background: rgba(0, 0, 0, .4);
+	border-bottom: solid 1px rgba(255, 255, 255, .4);
+}
+window arrow:hover {
+	background: unset;
+}
+box window > menu {
+	background: white;
+}
+box window > menu * {
+	color: black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft window > *,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft window > menu,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > window > menu,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PictureBrowser window > menu,
+#Lists_Library_Context #VBmain > #HPmain > #TBRight > stack window > menu {
+	padding: 1px 0 2px;
+	background: linear-gradient(0deg, rgba(102,86,52,1) 0%, rgba(204,183,157,1) 100%);
+	box-shadow: unset;
+	border-radius: 8px;
+}
+#Lists_Library_Context window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#Lists_Library_Context window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#Lists_Library_Context > #VBmain window > menu > menuitem > arrow,
+#Lists_Library_Context > #VBmain window > menu > menuitem > check,
+#Lists_Library_Context > #VBmain window > menu > menuitem > label,
+#Lists_Library_Context > #VBmain window > menu > menuitem > radio {
+	color: white;
+}
+#Lists_Library_Context > #VBmain window > menu > menuitem > radio,
+#Lists_Library_Context > #VBmain window > menu > menuitem > check {
+	border: solid 1px white;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft #HBStatus window > menu,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook window > menu,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0> #HPfp1 > #FilterPane > notebook window > menu,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList window > menu,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight #HBStatus window > menu {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack > box window > menu,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0> #HPfp1 > #FilterPane > notebook > stack > box window > menu {
+	background: #344665;
+	background: linear-gradient(0deg,rgba(52, 70, 101, 1) 0%, rgba(158, 175, 204, 1) 100%);
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList  window > menu {
+	background: #655734;
+	background: linear-gradient(0deg,rgba(101, 87, 52, 1) 0%, rgba(204, 189, 158, 1) 100%);
+}
+#Lists_Library_Context > #VBmain window > menu > menuitem:disabled {
+	color: #a0a0a0;
+	background: rgba(0, 0, 0, .1);
+}
+#Lists_Library_Context > #VBmain window > menu > menuitem:disabled > label {
+	color: rgba(255, 255, 255, .4);
+}
+#Lists_Library_Context > #VBmain window > menu > menuitem:disabled > check {
+	color: rgba(255, 255, 255, .4);
+	border: solid 1px rgba(255, 255, 255, .4);
+}
+arrow {
+	background: unset;
+}
+entry {
+	background: #f7f7f7;
+	box-shadow: inset 0 1px 3px black;
+	border: none
+}
+#Lists_Library_Context radio {
+	border: solid 1px black;
+}
+#Lists_Library_Context radio:checked {
+	background: unset;
+	border: solid 1px black;
+	box-shadow: unset;
+}
+tooltip {
+	margin: 0;
+	padding: 5px;
+	background: unset;
+	border-radius: 15px;
+}
+tooltip > * {
+	margin: -6px;
+	padding: 0px;
+	background: rgba(60, 60, 60,0.85);
+	border-radius: 15px;
+	box-shadow: inset 0 0 5px #888, 0 0 5px black;
+}
+tooltip > * > * {
+	font-family: DejaVuSerif-Italic_for_gmb,serif;
+	font-style: italic;
+	color: #fff6e6;
+	padding: 10px 15px;
+}
+/**:hover {
+	background: lightgrey;
+}*/
+selection {
+	background: grey;
+}
+
+/* [EN] Pictures on hover */
+/* [FR] Images au survol */
+#ArtistPicPopup > * {
+	padding: 15px;
+	background: #b8c9e6;
+	box-shadow: inset 0 0 120px 40px #303133, 0 0 10px #001333;
+	border: solid 5px #494a4d;
+}
+#CoverPopup > * {
+	padding: 15px;
+	background: #b8c9e6;
+	box-shadow: inset 0 0 120px 40px #303133, 0 0 10px #001333;
+	border: solid 5px #494a4d;
+}
+
+/* [EN] Discovery mode buttons */
+/* [FR] Boutons du mode Découverte */
+#Button {
+	margin-bottom: -1px;
+	padding: 1px 0 0 0;
+	min-width: 13px;
+	box-shadow: unset;
+}
+#Button:hover {
+	background: unset;
+}
+#Button > label {
+	background: url("images/gmb-tip16.svg") 0 0 no-repeat;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #Button {
+	margin-right: -1px;
+	background: linear-gradient(to bottom, rgba(157,157,157,1) 0, black 36px, rgba(0,0,0,0) 36px, rgba(0,0,0,0) 100%);
+	border-radius: unset;
+}
+/* [EN] Deletable tab crosses */
+/* [FR] Croix des onglets suppressibles */
+/*#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > header > tabs > tab > box > button,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > header > tabs > tab > box > button {
+	margin: 7px -3px 5px 5px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > header > tabs > tab:checked > box > button,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > header > tabs > tab:checked > box > button {
+	margin: 7px -3px 8px 5px:
+}*/
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > header > tabs > tab > box > button:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > header > tabs > tab > box > button:hover {
+	border-radius: 15px;
+	background: #d94a43;
+	box-shadow: inset 0 0 3px black, 0 0 2px lightgrey;
+}
+
+window > headerbar {
+	color: white;
+	background: #242424;
+	border:none;
+	border-radius: unset;
+}
+window > headerbar > box > button {
+	background: #393939;
+}
+window > headerbar > box > button:hover {
+	background: #454545;
+}
+window > headerbar > box > button > image {
+	color: white;
+}
+window > headerbar > box > label {
+	color: white;
+}
+
+dialog > box {
+	padding: 0 3px;
+}
+dialog > box > box > box > entry {
+	min-width: 280px;
+}
+dialog > box > box > box > label,
+dialog > box > box > checkbutton label,
+dialog > box > box > grid > combobox > box > button > box *,
+dialog > box > box > label,
+dialog > box > checkbutton > label,
+dialog > box > notebook > stack > scrolledwindow > viewport > box > box > button > box *,
+dialog stack > box > box > box > box > combobox > box > button > box > cellview > * {
+	color: white;
+}
+dialog > box > notebook > stack > scrolledwindow > viewport > box > box > button > window > menu > menuitem > label {
+	color: black;
+}
+dialog > box > box > checkbutton {
+	padding: 0 3px 0 0;
+	border-radius: 5px;
+}
+dialog > box > box > grid > combobox > box > button > box > cellview:hover {
+	background: unset;
+}
+dialog > box > checkbutton:hover {
+	background: grey;
+}
+dialog grid > label {
+	color: white;
+}
+dialog button {
+	border: none;
+	background: grey;
+	box-shadow: 0 0 3px #4d4d4d, inset 0 0 3px #4d4d4d;
+}
+dialog button:hover {
+	border: none;
+	background: #666666;
+	box-shadow: 0 0 3px grey, inset 0 0 3px #404040;
+}
+dialog treeview:selected {
+	background: #b3b3b3;
+}
+dialog stack {
+	padding: 3px 5px 0;
+}
+#Lists_Library_Context box {
+	box-shadow: unset;
+}
+#Lists_Library_Context entry,
+#Lists_Library_Context menuitem cellview {
+	color: black;
+}
+#Lists_Library_Context selection, dialog selection {
+	background: grey;
+}
+/* #Lists_Library_Context menuitem:hover {
+	background: grey;
+} */
+#Lists_Library_Context button {
+	text-shadow: unset;
+	border: none;
+	background: unset;
+	box-shadow: unset;
+}
+#Lists_Library_Context > #VBmain > #HPmain > separator {
+	margin-right: -6px;
+	padding: 0 5px 0 0;
+}
+/* [EN] Due to various "dialog" which cannot be specifically selected: */
+/* [FR] En raison des divers « dialog » qui ne peuvent être sélectionnés spécifiquement : */
+#Lists_Library_Context dialog {
+	background: unset;
+	color: unset;
+	font-weight: unset;
+	box-shadow: unset;
+	border: unset;
+	margin: unset;
+}
+#Lists_Library_Context check {
+	background: unset;
+	border: solid 1px black;
+}
+/* [EN] All tabs */
+/* [FR] Tous onglets */
+#Lists_Library_Context tab {
+	color: lightgrey;
+}
+#Lists_Library_Context tab:checked {}
+
+/* [EN] MAIN WINDOW */
+/* [FR] FENÊTRE PRINCIPALE */
+#Lists_Library_Context > headerbar * {
+	all: unset;
+}
+#Lists_Library_Context > headerbar {
+	min-height: 28px;
+	padding-bottom: 1px;
+	background: #242424;
+	color: white;
+}
+#Lists_Library_Context > headerbar > box > button {
+	margin-top: -2px;
+	padding: 3px;
+	background: #393939;
+	border-radius: 15px;
+}
+#Lists_Library_Context > headerbar > box > button:hover {
+	background: #454545;
+}
+#Lists_Library_Context > headerbar > box > label {
+	color: white;
+}
+#Lists_Library_Context > #VBmain {
+	margin: 0 -2px -3px 0;
+	padding: 0;
+	background: unset;
+	box-shadow: unset;
+}
+
+/*** [EN] [LEFT] Left part ***/
+/*** [FR] [GAUCHE] Partie gauche ***/
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft {
+	margin-top: -5px;
+	min-width: 600px;
+}
+/* [EN] [LEFT] ... its top part */
+/* [FR] [GAUCHE] ... sa partie haute : */
+	/* [EN] [LEFT] */
+	/* [FR] [GAUCHE] ... dont sa barre de menus */
+
+	/* [EN] [LEFT] #MBmenu contains #MainMenuItem, #LayoutItem etc. */
+	/* [FR] [GAUCHE] #MBmenu contient #MainMenuItem, #LayoutItem etc. */
+
+
+/* [EN] [LEFT] ... including menus and shortcuts */
+/* [FR] [GAUCHE] ... dont menus et raccourcis */
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons {
+	margin: 0 0 -1px;
+	padding: 0;
+	background: rgb(102,86,52);
+	background: linear-gradient(0deg, rgba(102,86,52,1) 0%, rgba(204,183,157,1) 100%);
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #PluginRip {
+	box-shadow: unset;
+	background-image: url("images/gmb-rip16.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #PluginRip:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #HBButtons_Player {
+	margin: 2px 10px -2px;
+	padding: 1px 12px 0;
+	background: #9d9d9d;
+	box-shadow: inset 0 5px 4px -1px black;
+	border-radius: 20px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #HBButtons_Player > button {
+	margin: 2px;
+	padding: 3px 5px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #HBButtons_Player > button:hover {
+	box-shadow: inset 0 0 3px black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #HBButtons_Player > #Prev > window > menu > menuitem:first-child {
+	background: rgba(0, 0, 0, .7);
+	border-radius: 10px 10px 2px 2px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #HBButtons_Player > #Button {
+	margin-left: -5px;
+	box-shadow: unset;
+}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu {
+		all: unset;
+		margin: 0 5px 0 0;
+		padding: 0;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu {
+		margin: 2px 0 2px 5px;
+		padding: 5px 5px 4px;
+		min-width: 24px;
+		box-shadow: unset;
+		background-image: url("images/gmb-menu.svg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 5px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu:hover {
+		background-color: unset;
+		box-shadow: inset 0 0 3px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu *:hover {
+		box-shadow: inset 0 8px 8px -16px black, inset 0 -8px 8px -16px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PFilterItem,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PSortItem,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #QueueItem {
+		margin: 2px;
+		padding: 4px 5px 4px;
+		min-width: 24px;
+		min-height: 24px;
+		box-shadow: unset;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 5px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PFilterItem:hover,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PSortItem:hover,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #QueueItem:hover {
+		box-shadow: inset 0 0 3px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PFilterItem {
+		background-image: url("images/gmb-filter.svg");
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PSortItem {
+		background-image: url("images/gmb-sort.svg");
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #QueueItem {
+		background-image: url("images/gmb-queue.svg");
+	}
+	/* [EN] [LEFT] Menu items (Main menu etc.) */
+	/* [FR] [GAUCHE] Éléments des menus (Menu principal etc.) */
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem > window > menu > menuitem,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem > window > menu > menuitem > window > menu > menuitem,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #LayoutItem > window > menu > menuitem,
+			#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #LayoutItem > window > menu > menuitem > window > menu > menuitem,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PFilterItem > window > menu > menuitem,
+			#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PFilterItem > window > menu > menuitem > window > menu > menuitem,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PSortItem > window > menu > menuitem,
+			#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PSortItem > window > menu > menuitem > window > menu > menuitem,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #QueueItem > window > menu > menuitem,
+			#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #QueueItem > window > menu > menuitem > window > menu > menuitem {
+			/*background-image: linear-gradient(to right, #ddd0ba 20px, #efeae0 20px, #efeae0 100%);*/
+			/*background-position: 5px;*/
+			background-repeat: no-repeat;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(1) {
+			background-image: url("images/gmb-add_music16.svg"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(2) {
+			background-image: url("images/gmb-refresh16.svg"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(4) {
+			background-image: url("images/gmb-current16.svg"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}
+		/*#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(6) {
+			background-image: url("images/gmb-browser16.svg"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(7) {
+			background-image: url("images/gmb-context16.svg"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(8) {
+			background-image: url("images/gmb-picture16.png"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(9) {
+			background-image: url("images/gmb-find16.svg"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}*/
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(6) {
+			background-image: url("images/gmb-equalizer16.svg"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}
+		/*#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(12) {
+			background-image: url("images/gmb-display16.svg"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}*/
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(8) {
+			background-image: url("images/gmb-shortcutbutton16.svg"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}
+			#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(8) > window > menu > menuitem:nth-child(1) {
+				color: white;
+				font-weight: bold;
+				background: rgba(0, 0, 0, .6);
+				border-radius: 10px 10px 2px 2px;
+			}
+			#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(8) > window > menu > menuitem:nth-child(1):hover {
+				background: rgba(0, 0, 0, .7);
+			}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(9) {
+			background-image: url("images/gmb-fullscreen16.svg"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(11) {
+			background-image: url("images/gmb-preferences16.svg"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(13) {
+			background-image: url("images/gmb-about16.png"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:nth-child(15) {
+			background-image: url("images/gmb-quit16.png"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+			background-position: 5px center, 0 0;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PFilterItem > window > menu > #menuitem-savedlists {
+			background-image: url("images/gmb-list16.png"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PSortItem > window > menu > menuitem:first-child {
+			background-image: url("images/gmb-random16.png"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #QueueItem > window > menu > menuitem:first-child {
+			background-image: url("images/gmb-album.png"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #QueueItem > window > menu > menuitem:nth-child(2) {
+			background-image: url("images/gmb-artist.png"), linear-gradient(to right, rgba(221, 208, 186, .8) 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
+		}
+	/* [EN] [LEFT] Menu items (Main menu etc.) on hover */
+	/* [FR] [GAUCHE] Éléments des menus (Menu principal etc.) au survol */
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem:hover,
+				#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem > window > menu > menuitem:hover,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu > window > menu > menuitem > window > menu > menuitem > window > menu > menuitem:hover,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #LayoutItem > window > menu > menuitem:hover,
+			#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #LayoutItem > window > menu > menuitem > window > menu > menuitem:hover,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PFilterItem > window > menu > menuitem:hover,
+			#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PFilterItem > window > menu > menuitem > window > menu > menuitem:hover,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PSortItem > window > menu > menuitem:hover,
+			#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #PSortItem > window > menu > menuitem > window > menu > menuitem:hover,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #QueueItem > window > menu > menuitem:hover,
+			#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBmenu > #QueueItem > window > menu > menuitem > window > menu > menuitem:hover {
+			/*background-color: #ddd0ba;*/
+			/*box-shadow: inset 0 5px 5px -5px grey, inset 0 -5px 5px -5px grey;*/
+		}
+
+	/* [EN] [LEFT] Browser, Full screen, Extraction program, Check, Scan, Settings, About buttons */
+	/* [FR] [GAUCHE] Boutons Explorateur, Plein écran, Programme d'extraction, Vérifier, Analyser, Réglages, À propos */
+	/* #Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #MBMenu > #SMMenu, */
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > * {
+		margin: 2px;
+		padding: 0 5px;
+	}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > button {
+		margin: 2px 0;
+		padding: 0 5px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #ToggleButton:checked {
+		background: rgba(0, 0, 0, .2);
+		box-shadow: inset 0 0 3px #333;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #VolumeIcon > image {
+		margin: 0 5px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > *:hover {
+		box-shadow: inset 0 0 4px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #VBButtons > #Check {
+		margin: 2px 2px 1px;
+		padding: 4px 5px 3px;
+		min-width: 0;
+		min-height: 0;
+		border-radius: 5px 5px 3px 3px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #VBButtons > #Scan {
+		margin: 0 2px;
+		padding: 3px 5px 4px;
+		min-width: 0;
+		min-height: 0;
+		border-radius: 3px 3px 5px 5px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #VBButtons > #Check:hover,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #VBButtons > #Scan:hover {
+		box-shadow: inset 0 0 3px black;
+	}
+
+/* [EN] [LEFT] ... including current song */
+/* [FR] [GAUCHE] ... dont morceau en cours */
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer {
+	margin: 0;
+	padding: 0;
+	background: #eed3b5 url("images/sand.jpg");
+}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBartistPic {
+		margin-right: -1px;
+		padding: 6px 5px 0;
+		background: linear-gradient(to bottom, rgba(157,157,157,1) 0, black 36px, rgba(0,0,0,0) 36px, rgba(0,0,0,0) 100%);
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBartistPic > #VBartistPic2 {
+		background: grey;
+		box-shadow: 0px -2px 2px -2px #000, 2px 2px 2px -2px #ccc, -2px 2px 2px -2px #ccc;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover {
+		margin-right: -1px;
+	}
+	/* [EN] [LEFT] ... including the artist picture */
+	/* [FR] [GAUCHE] ... dont l'image de l'artiste */
+
+	/* [EN] [LEFT] ...and everything else */
+	/* [FR] [GAUCHE] ... et tout le reste */
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover {
+		margin: 0 3px 1px 0;
+		padding: 0;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist {
+		margin-right: 3px;
+		padding: 0;
+	}
+	/* [EN] [LEFT] ... including player buttons, equalizer, volume, random, filter, queue buttons and number of songs (HBButtons3) */
+	/* [FR] [GAUCHE] ... dont boutons du lecteur, égaliseur, volume et boutons hasard, filtre, liste d'attente et nb de morceaux (HBButtons3) */
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTime_SoundButtons {
+		margin-bottom: 4px;
+		min-height: 36px;
+		border: none;
+		background: rgb(0,0,0);
+		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(157,157,157,1) 100%);
+	}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTime_SoundButtons > button {
+			margin-top: 2px;
+			padding: 4px 5px;
+			box-shadow: unset;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTime_SoundButtons > #Button {
+			margin: 2px 0;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTime_SoundButtons > button:hover {
+			box-shadow: inset 0 0 3px black;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTime_SoundButtons #VolumeIcon > image {
+			margin-left: 5px;
+		}
+		/* [EN] [LEFT] ... including random, filter, queue buttons and number of songs */
+		/* [FR] [GAUCHE] ... dont boutons hasard, filtre, liste d'attente et nb de morceaux */
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #HBButtons {
+			margin: 5px 0;
+			padding: 2px 5px 0 5px;
+			background: #998870;
+			border-radius: 15px;
+			color: white;
+			text-shadow: 0 0 8px black;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #HBButtons > #Filter > window > menu > #menuitem-savedlists > label {
+			background-image: url("images/gmb-list16.png");
+			margin-left: -23px;
+			padding-left: 23px;
+			background-position: 0px;
+			background-repeat: no-repeat;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #HBButtons > #Queue > window > menu > menuitem:first-child > *:first-child {
+			background-image: url("images/gmb-album.png");
+			margin-left: -23px;
+			padding-left: 23px;
+			background-position: 0px;
+			background-repeat: no-repeat;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #HBButtons > #Queue > window > menu > menuitem:nth-child(2) > *:first-child {
+			background-image: url("images/gmb-artist.png");
+			margin-left: -23px;
+			padding-left: 23px;
+			background-position: 0px;
+			background-repeat: no-repeat;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #HBButtons > #Pos > label {
+			color: white;
+			font-size: 1.2em;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBMenu_Buttons > #HBButtons > #Sort > window > menu > menuitem:first-child > *:first-child {
+			background-image: url("images/gmb-random16.png");
+			margin-left: -23px;
+			padding-left: 23px;
+			background-position: 0px;
+			background-repeat: no-repeat;
+		}
+
+	/* [EN] [LEFT] ... including volume bar */
+	/* [FR] [GAUCHE] ... dont barre de volume */
+	#Volume {
+		background: #8a8a8a;
+		border: none;
+	}
+	#Volume #VolumeSlider {
+		background: unset;
+	}
+	/* [EN] [LEFT] button */
+	/* [FR] [GAUCHE] bouton */
+	#Volume contents > * > * {
+		background: #5b5b5b;
+		border: solid 1px black;
+		box-shadow: 0 0 2px black;
+	}
+	/* [EN] [LEFT] ... progress bar */
+	/* [FR] [GAUCHE] ... barre de progression */
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTime_SoundButtons > #Time > label {/* [EN] with icon */ /* [FR] avec icône */
+		margin: 3px 5px 4px 3px;
+		padding: 1px 10px 0px 35px;
+		font-family: 'Anta_for_gmb', sans;
+		font-style: normal;
+		font-size: 1em;
+		color: lightgrey;
+		text-shadow: 0 0 1px black;
+		background: #5b5b5b url("images/gmb-wait.png") left no-repeat;
+		background-size: 24px 21px;
+		background-position: 5px 5px;
+		border-radius: 15px;
+		box-shadow: 2px 2px 2px #4c3e2e;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTime_SoundButtons > #TimeBar > progressbar {}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTime_SoundButtons > #TimeBar > progressbar > trough {
+			margin: 0 5px 15px 5px;
+			box-shadow: 1px 1px 2px #4c3e2e;
+			background: lightgrey;
+			border: solid 1px black;
+			border-radius: 1px;
+		}
+			#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTime_SoundButtons > #TimeBar > progressbar > trough > progress {
+				background: grey;
+				border: solid 1px black;
+			}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTitle {
+	margin-right: 5px;
+}
+	/* [EN] [LEFT] ... label icons */
+	/* [FR] [GAUCHE] ... icônes d'étiquettes */
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTitle > #LabelsIcons {
+	margin-left: -1px;
+	padding: 5px 0 0 5px;
+	min-height: 0;
+	background: #97866a;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTitle > #LabelsIcons > image {
+	margin: 0 3px;
+	padding: 0;
+}
+	/* [EN] [LEFT] ... ratings (stars) */
+	/* [FR] [GAUCHE] ... évaluation (étoiles) */
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTitle > #Stars > image {
+		padding: 0 5px;
+		margin-left: 5px;
+		background: #b59b6c;
+	}
+
+	/* [EN] [LEFT] ... title, artist and album */
+	/* [FR] [GAUCHE] ... titre, artiste et album */
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTitle,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBAlbum,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBArtist
+ {
+		background: #cab795;
+		box-shadow: 2px 2px 2px #4c3e2e;
+		margin-bottom: 4px;
+		color: #9d7e50;
+		padding: 0;
+		border-radius: 15px;
+		background-size: 16px 16px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBAlbum,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBArtist {
+	padding-right: 5px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBAlbum {
+		border-radius: 15px 0 0 15px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBArtist {
+		margin-bottom: 2px;
+		border-radius: 0 15px 15px 0;
+	}
+		/* [EN] [LEFT] ... their icons and locks */
+		/* [FR] [GAUCHE] ... leurs icônes et verrous */
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTitle > #LockSong > image,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBAlbum > #LockAlbum > image,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBArtist > #LockArtist > image {
+			margin-right: 5px;
+			padding: 0 4px 2px 23px;
+			border-radius: 15px 0 0 15px;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBArtist > #LockArtist > image {
+			border-radius: unset;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTitle > #LockSong > image {
+			background: #b59b6c, url("images/gmb-song.png") 5px 5px no-repeat;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBAlbum > #LockAlbum > image {
+			background: #b59b6c, url("images/gmb-album.png") 5px 3px no-repeat;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBArtist > #LockArtist > image {
+			background: #b59b6c, url("images/gmb-artist.png") 5px 2px no-repeat;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTitle > #Title label,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBAlbum > #Album label,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBArtist > #Artist label {
+			color: #9d7e50;
+			text-shadow: -1px -1px 1px black, 1px 1px 1px #f6f3ed;
+			box-shadow: none;
+			border-radius: 0 10px 10px 0;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTitle > #Title > label {
+			font-size: 0.85em;
+		}
+		/* [EN] [LEFT] ...their drop-down lists */
+		/* [FR] [GAUCHE] ... leurs listes déroulantes */
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTitle > #Title * label,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBAlbum > #Album * label,
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBAlbum_Artist_Cover > #VBAlbum_Artist > #HBArtist > #Artist * label {
+			color: white;
+			background: none;
+			border: none;
+			box-shadow: none;
+			text-shadow: none;
+		}
+		/* [EN] [LEFT] ... year */
+		/* [FR] [GAUCHE] ... année */
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTitle > #Year {}
+			#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #VBTopLeft > #HBPlayer > #VBTime_SoundButtons_Text_Cover > #HBTitle > #Year > label {
+				color: white;
+				margin-left: -1px;
+				padding-left: 5px;
+				padding-right: 5px;
+				background: #97866a;
+				border-radius: 0 10px 10px 0;
+				text-shadow: 0 0 8px black;
+			}
+
+/*** [EN] [LEFT] Pages ***/
+/*** [FR] [GAUCHE] Pages ***/
+#Lists_Library_Context > #VBmain > #SongList > scrollbar {
+	margin-bottom: -10px;
+}
+/* [EN] [LEFT] Page tabs and column headers in tree view */
+/* [FR] [GAUCHE] Onglets de pages et entêtes de colonnes en vue arborescente */
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists {
+	border: none;
+	margin: -6px 0 0 -1px
+}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > header {
+		border: none;
+		margin: 0 -10px 0 0;
+		padding: 0 12px 2px 0;
+		background: rgb(102,86,52);
+		background: linear-gradient(0deg, rgba(102,86,52,1) 0%, rgba(204,183,157,1) 100%);
+	}
+	/* [EN] [LEFT] ...including tabs */
+	/* [FR] [GAUCHE] ... dont les onglets */
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > header > tabs > tab {
+			margin: 5px 2px 3px 2px;
+			padding: 0 10px;
+			border-radius: 15px;
+			background: #99835b;
+			box-shadow: inset 0 2px 4px lightgrey, 0 1px 3px #4d4d4d;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > header > tabs > tab:hover {
+			background: #99835b;
+			box-shadow: inset 0 2px 4px #5b5b5b, 0 1px 3px #5b5b5b;
+		}
+		/* [EN] [LEFT] ... including the active tab */
+		/* [FR] [GAUCHE] ... dont l'onglet actif */
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > header > tabs > tab:checked {
+			color: #f6f3ed;
+			text-shadow: -1px -1px 2px black;
+			font-weight: bold;
+			margin: 5px 5px 0 5px;
+			background: #766545;
+			border: none;
+			border-radius: 15px 15px 0 0;
+			box-shadow: inset 0 8px 5px -5px black;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > header > tabs > arrow {
+			color: #766545;
+			margin: 4px 2px;
+			padding: 0 5px;
+			border-radius: 5px;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > header > tabs > arrow:hover {
+			color: black;
+			box-shadow: inset 0 0 5px #766545;
+			background: unset;
+		}
+		#Lists_Library_Context > box > paned > #VBLeft > #TabbedLists > header > tabs > tab > box > label {
+			color: white;
+		}
+		#Lists_Library_Context > box > paned > #VBLeft > #TabbedLists > header > tabs > tab:checked > box > label {
+			color: white;
+		}
+		/* [EN] [LEFT] ... including the + button */
+		/* [FR] [GAUCHE] ... dont le bouton + */
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > header > button {
+			margin: 2px;
+			padding: 0 10px;
+			border-radius: 5px;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > header > button:hover {
+			box-shadow: inset 0 0 4px black;
+		}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #QueueList > scrollbar,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongInfo > scrollbar,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongList > scrollbar,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongTree > scrollbar {
+	padding: 5px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PlayList > treeview {
+	text-shadow: 0 0 3px #332b1e;
+	background: #007bdb url("images/desert.png") bottom center no-repeat;
+	background-size: contain;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PlayList > treeview > header > button > box > widget > label {
+	text-shadow: 0 0 1px grey;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PlayList > treeview > *,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #QueueList > treeview > * {
+	text-shadow: none;
+	background: #f2eada;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PlayList > treeview > *:selected,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #QueueList > treeview > *:selected {
+	text-shadow: none;
+	background: #d9cbae;
+}
+
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongTree > box > treeview,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #QueueList > treeview {
+	background: url("images/oldpaper.jpg") #f6f3ed;
+}
+
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongTree {
+	margin-right: -1px;
+}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PictureBrowser {
+		padding: 0;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PictureBrowser paned {
+		padding: 50px;
+		background: #372f1c;
+		box-shadow: inset 0 0 20px 20px black
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PictureBrowser > box > paned > paned {
+		margin-right: 5px;
+		padding: 10px;
+		box-shadow: inset 0 0 5px 5px black;
+		border-radius: 15px 0 0 15px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PictureBrowser > box > paned > paned > scrolledwindow > treeview {
+		color: white;
+		background: unset;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PictureBrowser > box > paned > paned > scrolledwindow > treeview * {
+		color: white;
+		background: unset;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PictureBrowser > box > paned > separator {
+		padding: 0;
+		margin: 0 5px 0 0;
+		background: unset;
+		border: solid 1px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PictureBrowser > box > paned > separator:hover {
+		background: unset;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PictureBrowser > toolbar {
+		margin: -2px 0 -7px;
+		background: black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PictureBrowser > toolbar > toolbutton > button:checked {
+		background: #4d4538;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PictureBrowser > toolbar > toolbutton > button > label {
+		color: white;
+	}
+/* [EN] [LEFT] Search page search bar */
+/* [FR] [GAUCHE] Barre de recherche de la page de recherche */
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain {
+	background: #766545;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SimpleSearch {
+	margin: 4px 5px 1px 5px;
+	padding: 0 5px;
+}
+/* [EN] [LEFT] Context menu items and submenus when hovering over page titles, main window */
+/* [FR] [GAUCHE] Éléments du menu contextuel et sous-menus au survol des titres en page, fenêtre principale */
+/*#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongTree *:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongList *:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #EditList *:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #EditList *:selected,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PictureBrowser *:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PlayList *:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics selection,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #QueueList *:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #QueueList *:selected {
+	color: black;
+	background: #bfad8d;
+}*/
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongTree arrow:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongList arrow:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #EditList arrow:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PictureBrowser arrow:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PlayList arrow:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #QueueList arrow:hover {
+	background: unset;
+}
+	/* [EN] [LEFT] Playlists, queue and layouts */
+	/* [FR] [GAUCHE] Listes de lecture, file d'attente et mises en pages */
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PlayList,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #QueueList,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists box,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #EditList {
+		border: none;
+		margin: -1px 0 0;
+	}
+	/* [EN] [LEFT] ...and their column headers */
+	/* [FR] [GAUCHE] ... et leurs entêtes de colonnes */
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists treeview button {
+		color: black;
+		border: none;
+		margin: 0;
+		padding: 0;
+		border-radius: 0;
+		background: #766545;
+	}
+	/* [EN] [LEFT] "Information" page */
+	/* [FR] [GAUCHE] Page « Information » */
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > box > #SongInfo {
+	background: #f2eada;
+}
+	/* [EN] [LEFT] "Lyrics", "Album Info", "Artist Info" pages */
+	/* [FR] [GAUCHE] Pages « Paroles », « À propos de l'album », « À propos de l'artiste » */
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolbutton > button {
+	margin: 0 5px 2px 0;
+	padding: 5px 6px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolbutton:nth-child(6) > button {
+	padding: 5px 10px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > button:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolbutton > button:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolbutton > button:checked {
+	box-shadow: inset 0 0 3px black;
+	border-radius: 5px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginArtistinfo > box > toolbar > toolbutton > button {
+	margin: 0px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginArtistinfo > box > toolbar > toolbutton > button:hover {
+	box-shadow: inset 0 0 3px black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginArtistinfo > box > toolbar > toolitem > button:checked {
+	box-shadow: inset 0 0 5px #19354d;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginArtistinfo > box > toolbar > toolitem > button:checked:hover {
+	background: unset;
+	box-shadow: inset 0 0 5px #19354d;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginArtistinfo > box > toolbar > toolitem > button:hover {
+	background: #2b5980;
+	box-shadow: inset 0 0 3px #19354d;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginAlbuminfo > box > widget > box > label,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginArtistinfo > box > box > widget > box > label,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginArtistinfo > box > toolbar > toolitem > button > label,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolbutton > button > box > label,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolbutton > button > label {
+	color: white;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolitem > checkbutton:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolitem > combobox > box > button:hover {
+	background: #2b5980;
+	box-shadow: inset 0 0 3px #19354d;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolitem > combobox > box > button:hover > box > cellview {
+	background: unset;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolitem > checkbutton > check {
+	border: 1px solid white;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolitem > checkbutton > check,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolitem > checkbutton > label,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolitem > combobox > box > button > box > arrow,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolitem > combobox > box > button > box > cellview * {
+	color: white;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolitem > spinbutton {
+	border: none;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolitem > spinbutton > button {
+	background: lightgrey;
+	box-shadow: inset 0 0 2px black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar > toolitem > spinbutton > button:hover {
+	background: grey;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginAlbuminfo > box,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginArtistinfo > box {
+	padding: 10px;
+	background: black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginAlbuminfo > box > widget > box > box,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginArtistinfo > box > toolbar,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > toolbar {
+	background: #3772a4;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginAlbuminfo > box > widget > box > box > button {
+	margin: 1px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginAlbuminfo > box > widget > box > box > button:hover {
+	box-shadow: inset 0 0 3px black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > scrolledwindow {
+	border: none;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginLyrics > scrolledwindow > textview > text,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginAlbuminfo > box > scrolledwindow > textview > text,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PluginArtistinfo > box > scrolledwindow > textview > text {
+	background: #eaf0fa;
+}
+
+/* [EN] [LEFT] Selected row in tree view */
+/* [FR] [GAUCHE] Ligne sélectionnée en vue arborescente */
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists box:selected,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongTree treeview:selected,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongList treeview:selected,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #EditList treeview:selected,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PlayList treeview:selected,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #QueueList treeview:selected {
+ background: #c3b498;
+ color: #372f1c;
+}
+/* [EN] [LEFT] Hovered line in tree view */
+/* [FR] [GAUCHE] Ligne survolée en vue arborescente */
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists box:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongTree treeview:hover,/* [EN] */ /* [FR] Ne fonctionne pas !?!? */
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #SongList treeview:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #EditList treeview:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > #PlayList treeview:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #QueueList treeview:hover {
+ background: #a89b83;
+ color: #372f1c;
+}
+/* [EN] [LEFT] Search bar */
+/* [FR] [GAUCHE] Barre de recherche */
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > box > scrolledwindow > box > box {
+	padding: 4px 20px 3px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > box > scrolledwindow > box > box > label {
+	margin-right: 5px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > box > scrolledwindow > box > box > button > box > label,
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > box > scrolledwindow > box > box > label {
+	color: white;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > box > scrolledwindow > box > box > button {
+	margin: 0 5px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > box > scrolledwindow > box > box > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+/* [EN] [LEFT] Statusbar (Filter / Selection etc. totals) */
+/* [FR] [GAUCHE] Barre de statut (Totaux Filtre / Sélection etc.) */
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #HBStatus {
+		margin: -1px 0 0 1px;
+		padding: 6px 5px 0;
+		background: rgb(75,75,75);
+		background: linear-gradient(0deg, rgba(75,75,75,1) 0%, rgba(75,75,75,1) 80%, rgba(157,157,157,1) 95%, rgba(157,157,157,1) 100%);
+		box-shadow: inset 4px 0 4px -4px black, inset -4px 0 4px -4px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #HBStatus > #HBStatus1 > #Total,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #HBStatus > #HBStatus2 > #Total {
+		margin: 0 1px;
+		padding: 0px 5px;
+		border-radius: 2px;
+		background: #5b5b5b;
+		box-shadow: inset 0 2px 4px #999999, 0 2px 3px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #HBStatus > #HBStatus1 > #Total > label,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #HBStatus > #HBStatus2 > #Total > label {
+		color: lightgrey;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #HBStatus > #HBStatus1 > #Total:hover,
+	#Lists_Library_Context > #VBmain > #HPmain > #VBLeft > #TabbedLists > stack > box > #VBmain > #HBStatus > #HBStatus2 > #Total:hover {
+		box-shadow: inset 0 0 4px black;
+	}
+
+/*** [EN] [RIGHT] Right part ***/
+/*** [FR] [DROITE] Partie droite ***/
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight {
+	margin-top: 1px;
+	margin-left: -2px;
+	background: #f6f3ed;
+}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > header {
+		border: none;
+		margin: -1px 0 0 -1px;
+	}
+		/* [EN] [RIGHT] ... including the 1st level tabs */
+		/* [FR] [DROITE] ... dont les onglets de 1er niveau */
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > header > tabs {
+			margin: -1px 0 -4px 1px;
+			padding-left: 50px;
+			background: rgb(102,86,52);
+			background: linear-gradient(0deg, rgba(102,86,52,1) 0%, rgba(204,183,157,1) 100%);
+		}
+			#Lists_Library_Context > #VBmain > #HPmain > #TBRight > header > tabs > tab {		
+				margin: 3px 0 3px 8px;
+				padding: 0 10px;
+				border-radius: 15px;
+				background: #99835b;
+				box-shadow: inset 0 2px 4px lightgrey, 0 1px 3px #4d4d4d;
+			}
+			#Lists_Library_Context > #VBmain > #HPmain > #TBRight > header > tabs > tab:hover {
+				background: #99835b;
+				box-shadow: inset 0 2px 4px #5b5b5b, 0 1px 3px #5b5b5b;
+			}
+			/* [EN] [RIGHT] ... including the active tab */
+			/* [FR] [DROITE] ... dont l'onglet actif */
+			#Lists_Library_Context > #VBmain > #HPmain > #TBRight > header > tabs > tab:checked {
+					margin: 2px 0 0 10px;
+					color: #f6f3ed;
+					text-shadow: -1px -1px 2px black;
+					font-weight: bold;
+					background: rgb(157,157,157);
+					border: none;
+					border-radius: 15px 15px 0 0;
+					box-shadow: inset 0 5px 4px -1px black;	
+			}
+			#Lists_Library_Context > #VBmain > #HPmain > #TBRight > header > tabs > tab label {
+				color: white;
+			}
+			#Lists_Library_Context > #VBmain > #HPmain > #TBRight > header > tabs > tab:checked label {
+				color: white;
+			}		
+	/* [EN] [RIGHT] Context tabs */
+	/* [FR] [DROITE] Onglets du Contexte */
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context {
+	min-height: unset;
+	border: solid 1px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > header {
+	margin: 2px 0 0 -1px;
+	padding-bottom: 4px;
+	min-height: 31px;
+	border: none;
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(157,157,157,1) 100%);
+}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > header > tabs {
+		margin: -2px 0 -4px 1px;
+	}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > header > tabs > tab {
+			margin: 4px 0 3px 8px;
+			padding: 0 10px;
+			border-radius: 15px;
+			background: #5b5b5b;
+			box-shadow: inset 0 2px 4px #999999, 0 2px 3px black;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > header > tabs > tab > box > label {
+			color: white;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > header > tabs > tab:checked > box > label {
+			color: white;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context tab:hover {
+			box-shadow: inset 0 0 4px black;
+		}
+		/* [EN] [RIGHT] ... including the active tab */
+		/* [FR] [DROITE] ... dont l'onglet actif */
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context tab:checked {
+			margin: 5px 0 0 10px;
+			color: #f6f3ed;
+			text-shadow: -1px -1px 2px black;
+			font-weight: bold;
+			background: rgb(91,91,91);
+			background: linear-gradient(180deg, rgba(91,91,91,1) 25%, rgba(0,0,0,1) 100%);
+			border: none;
+			border-radius: 15px 15px 0 0;
+			box-shadow: inset 0 5px 4px -1px black;	
+		}
+		/* [EN] [RIGHT] ... including the + button */
+		/* [FR] [DROITE] ... dont le bouton + */
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > header > button {
+		margin: 2px;
+		padding: 0 10px;
+		border-radius: 5px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > header > button:hover {
+		box-shadow: inset 0 0 4px black;
+	}
+	/* [EN] [RIGHT] ... including Context > Album images */
+	/* [FR] [DROITE] ... dont Contexte > Images de l'album */
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PictureBrowser {
+		padding: unset;
+		background: unset;
+		box-shadow: unset;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PictureBrowser > box > paned {
+		padding: 66px 25px;
+		background: #372f1c;
+		box-shadow: inset 0 0 20px 20px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PictureBrowser > box > paned > separator {
+		padding: 0;
+		margin: 0 5px 0 0;
+		background: unset;
+		border: solid 1px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PictureBrowser > box > paned > separator:hover {
+		background: unset;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PictureBrowser > box > paned > paned {
+		margin-right: 5px;
+		padding: 10px;
+		box-shadow: inset 0 0 5px 5px black;
+		border-radius: 15px 0 0 15px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PictureBrowser > box > paned > paned > scrolledwindow > treeview {
+		color: white;
+		background: unset;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PictureBrowser > box > paned > paned > scrolledwindow > treeview * {
+		color: white;
+		background: unset;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PictureBrowser > toolbar {
+		margin: -2px 0 -7px;
+		background: black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PictureBrowser > toolbar > toolbutton > button:checked {
+		background: #4d4538;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PictureBrowser > toolbar > toolbutton > button:hover {
+		background: #cab795;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PictureBrowser > toolbar > toolbutton > button > label {
+		color: white;
+	}
+	/* [EN] [RIGHT] ... including Context > Lyrics, Album Info, Artist Info */
+	/* [FR] [DROITE] ... dont Contexte > Paroles, À propos de l'album, À propos de l'artiste */
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginArtistinfo > box > toolbar > toolbutton > button {
+	margin: 0px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginArtistinfo > box > toolbar > toolbutton > button:hover {
+	box-shadow: inset 0 0 3px black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginArtistinfo > box > toolbar > toolitem > button:checked {
+	box-shadow: inset 0 0 5px #19354d;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginArtistinfo > box > toolbar > toolitem > button:checked:hover {
+	background: unset;
+	box-shadow: inset 0 0 5px #19354d;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginArtistinfo > box > toolbar > toolitem > button:hover {
+	background: #2b5980;
+	box-shadow: inset 0 0 3px #19354d;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolbutton > button {
+	margin: 0 5px 2px 0;
+	padding: 5px 6px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolbutton:nth-child(6) > button {
+	padding: 5px 10px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > button:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolbutton > button:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolbutton > button:checked {
+	box-shadow: inset 0 0 3px black;
+	border-radius: 5px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginAlbuminfo > box > widget > box > box > button {
+	margin: 1px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginAlbuminfo > box > widget > box > box > button:hover {
+	box-shadow: inset 0 0 3px black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginAlbuminfo > box > widget > box > label,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginArtistinfo > box > box > widget > box > label,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginArtistinfo > box > toolbar > toolitem > button > label,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolbutton > button > box > label,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolbutton > button > label {
+	color: white;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolitem > checkbutton:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolitem > combobox > box > button:hover {
+	background: #2b5980;
+	box-shadow: inset 0 0 3px #19354d;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolitem > combobox > box > button:hover > box > cellview {
+	background: unset;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolitem > checkbutton > check {
+	border: 1px solid white;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolitem > checkbutton > check,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolitem > checkbutton > label,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolitem > combobox > box > button > box > arrow,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolitem > combobox > box > button > box > cellview * {
+	color: white;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolitem > spinbutton {
+	border: none;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolitem > spinbutton > button {
+	background: lightgrey;
+	box-shadow: inset 0 0 2px black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar > toolitem > spinbutton > button:hover {
+	background: grey;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginAlbuminfo > box,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginArtistinfo > box {
+	padding: 10px;
+	background: black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginAlbuminfo > box > widget > box > box,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginArtistinfo > box > toolbar,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > toolbar {
+	background: #3772a4;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > scrolledwindow {
+	border: none;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginLyrics > scrolledwindow > textview > text,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginAlbuminfo > box > scrolledwindow > textview > text,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > #PluginArtistinfo > box > scrolledwindow > textview > text {
+	background: #eaf0fa;
+}
+/* [EN] Without tabs */
+/* [EN] Sans onglets */
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser {
+	margin: 0;
+	padding-top: 35px;
+	background: linear-gradient(rgb(170,170,170), black 39px, rgb(228, 234, 244) 39px, rgb(173, 203, 255));
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser > box {
+	margin: 0 -28 -28;
+	padding: 67px 25px 68px;
+	background: #372f1c;
+	box-shadow: inset 0 0 20px 20px black
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser > box > paned {
+	margin-top: 0;
+	padding: 0;
+background: unset;box-shadow: unset;
+}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser > box > paned > separator {
+		padding: 0;
+		margin: 0 5px 0 0;
+		background: unset;
+		border: solid 1px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser > box > paned > separator:hover {
+		background: unset;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser > box > paned > paned {
+		margin-right: 5px;
+		padding: 10px;
+		box-shadow: inset 0 0 5px 5px black;
+		border-radius: 15px 0 0 15px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser > box > paned > paned > scrolledwindow > treeview {
+		color: white;
+		background: unset;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser > box > paned > paned > scrolledwindow > treeview * {
+		color: white;
+		background: unset;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser > toolbar {
+		margin: 2px -28px -7px;
+		padding: 0 5px 5px;
+		background: black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser > toolbar > toolbutton > button:checked {
+		background: #4d4538;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser > toolbar > toolbutton > button:hover {
+		background: #cab795;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser > toolbar > toolbutton > button > label {
+		color: white;
+	}
+
+/* [EN] [RIGHT] "Library" tabs */
+/* [FR] [DROITE] Onglets de la « Musithèque » */
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight {
+	margin-left: -1px;
+}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook {
+		border: none;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > header,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > header {
+		margin: 3px 0 0 0;
+		padding-bottom: 3px;
+		border: none;
+		background: rgb(0,0,0);
+		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(157,157,157,1) 100%);
+	}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > header > tabs {
+			margin: -1px 0 -2px 5px;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > header > tabs {
+			margin: -1px 0 -2px 0;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > header > tabs > arrow {
+			background: unset;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > header > tabs > tab,
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > header > tabs > tab {
+			margin: 3px 4px 2px 4px;
+			padding: 0 5px;
+			border-radius: 15px;
+			background: #5b5b5b;
+			box-shadow: inset 0 2px 4px #999999, 0 2px 3px black;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > header > tabs > tab:hover,
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > header > tabs > tab:hover {
+			box-shadow: inset 0 0 4px black;
+		}
+		/* [EN] [RIGHT] ... including the active tab */
+		/* [FR] [DROITE] ... dont l'onglet actif */
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > header > tabs > tab:checked,
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > header > tabs > tab:checked {
+			margin: 5px 4px -1px 4px;
+			padding: 0 5px;
+			background: #e4eaf4;
+			border: none;
+			border-radius: 15px 15px 0 0;
+			box-shadow: inset 0 8px 5px -5px black;	
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > header > tabs > tab:checked *,
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > header > tabs > tab:checked * {
+			color: black;
+			text-shadow: -1px -1px 2px #8f9399;
+			font-weight: bold;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > header > tabs > arrow,
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > header > tabs > arrow {
+			color: grey;
+			margin: 4px 0;
+			padding: 3px;
+			border-radius: 5px;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > header > tabs > arrow:hover,
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > header > tabs > arrow:hover {
+			color: black;
+			box-shadow: inset 0 0 5px black;
+			background: unset;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > header > tabs > tab > label,
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > header > tabs > tab > label {
+			color: white;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane label,
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane label {
+			color: black;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane window > menu > menuitem > label,
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane window > menu > menuitem > label {
+			color: white;
+		}
+		#Lists_Library_Context #FilterPane treeview:selected {
+			background: #b7c7e0;
+ 			color: black;
+		}
+	/* [EN] [RIGHT] Panel buttons */
+	/* [FR] [DROITE] Boutons des panneaux */
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane {
+		background: #666f80;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > box > spinbutton > button,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > box > spinbutton > button {
+		background: lightgrey;
+		box-shadow: inset 0 0 3px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > box > spinbutton > button:hover,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > box > spinbutton > button:hover {
+		background: grey;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > box,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > box {
+		margin: -2px 0 3px 5px;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > box > spinbutton,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > box > spinbutton {
+		border: none;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > box > button,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > box > button {
+		background: lightgrey;
+		box-shadow: inset 0 0 3px black/*, 0 0 2px grey*/;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > box > button:hover,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > box > button:hover {
+		background: grey;
+		box-shadow: inset 0 0 2px black, 0 0 2px grey;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > box > button:checked,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > box > button:checked {
+		background: #666666;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > box > box * {
+		background: unset;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack > box > scrolledwindow > scrollbar,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > box > scrolledwindow > scrollbar {
+		padding: 5px;
+	}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane {
+	padding: 0;
+	background: linear-gradient(rgb(228, 234, 244), rgb(189, 212, 252));
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack {
+	padding: 5px 5px 0 8px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack treeview{
+	padding: 0;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack {
+	padding: 5px 5px 0 0;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane:first-child {
+	border-right: solid 1px black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > box {
+	padding: 3px 7px 0;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > box {
+	padding: 3px 7px 0 0;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > box > spinbutton > entry,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > box > spinbutton > entry {
+	border-radius: 5px 0 0 5px;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane:first-child {
+	padding: 0;
+	background: linear-gradient(rgb(228, 234, 244) 39px, rgb(173, 203, 255));
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane {
+	padding: 0;
+	background: linear-gradient(rgb(228, 234, 244) 39px, rgb(143, 184, 255));
+}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > header,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > header {
+		margin: 3px 0 0 0;
+		padding-bottom: 3px;
+		border: none;
+		background: black;
+		background: linear-gradient(rgb(157,157,157),rgb(0,0,0));
+	}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack > box > scrolledwindow > treeview,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack > box > scrolledwindow,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > box > scrolledwindow > treeview,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > box > scrolledwindow,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack > box > scrolledwindow > treeview > *:not(:selected),
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > box > scrolledwindow > treeview > *:not(:selected) {
+	background: unset;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > separator {
+	margin: 0 -2px;
+	background: linear-gradient(rgb(170,170,170), black 39px, rgb(228, 234, 244) 39px, rgb(173, 203, 255));
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > separator {
+	margin: 0 -2px;
+	background: linear-gradient(rgb(170,170,170), black 39px, rgb(228, 234, 244) 39px, rgb(143, 184, 255));
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > separator {
+	margin-top: -9px;
+}
+/* [EN] [RIGHT] Search bar and buttons in the middle */
+/* [FR] [DROITE] Barre de recherche et boutons au milieu */
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList {}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList {
+		padding: 0 5px;
+		color: lightgrey;
+		background: rgb(0,0,0);
+		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(157,157,157,1) 100%);
+		min-height: 37px;
+	}
+		#SimpleSearch {
+			margin: 1px 0 3px 10px;
+		}
+		#SimpleSearch > image {
+			padding: 3px;
+			border-radius: 5px;
+		}
+		#SimpleSearch > image:hover {
+			background: lightgrey;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList #MBlist {
+			margin: 5px;
+			padding: 0 10px;
+			background: #5b5b5b;
+			border-radius: 15px;		
+		}
+			/*#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList #MBlist menuitem:hover {
+				background: #5b5b5b;
+				box-shadow: inset 0 0 4px black;
+			}*/
+			/*#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList > #MBlist window > menu {
+				background: #efe9de;
+			}*/
+			#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList > #MBlist > menuitem > label {
+				background: unset;
+				margin: -6px 0 -8px;
+				color: white;
+				text-shadow: 0 0 2px black;
+			}
+			/*#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList > #MBlist > menuitem *:hover {
+				background: #c3b498;
+			}*/
+			/*#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList > #MBlist > #HistItem *:hover {
+				box-shadow: none;
+			}*/
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList > button {
+			margin: 2px 0;
+			box-shadow: unset;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList > button:hover {
+			box-shadow: inset 0 0 4px black;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList > button:checked {
+			box-shadow: inset 0 0 5px black;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList > #FilterLock {
+			background: url("images/gmb-lockopen.png") center no-repeat;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList > #FilterLock:hover {
+			background: url("images/gmb-locklight.png") center no-repeat;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList > #FilterLock:checked {
+			background: url("images/gmb-lock.png") center no-repeat;
+			box-shadow: inset 0 0 5px #444;
+		}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList > #FilterLock:checked:hover {
+			background: url("images/gmb-locklight.png") center no-repeat;
+		}
+
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBSongList * {}
+	/* [EN] [RIGHT] Song list at bottom */
+	/* [FR] [DROITE] Liste des morceaux en bas */
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList {
+		margin-top: -1px;
+		background: #CCCAC5;
+		background: linear-gradient(0deg, rgba(204, 202, 197, 1) 0%, rgba(246, 243, 237, 1) 100%);
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList > treeview,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList > treeview > header,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList > treeview > header > button {
+		border: none;
+	}
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList > treeview > * {
+			background: unset;
+		}
+		/*#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList > treeview > *:hover {
+			background: #ccc3b8;
+		}*/
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList > treeview > *:selected {
+ 			 background: #b3a99d;
+ 			 color: #372f1c;
+		}
+		/* [EN] [RIGHT] Headers */
+		/* [FR] [DROITE] Entêtes */
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList > treeview > header > button {
+			background: #b19e7a;
+			color: black;
+		}
+	/* [EN] [RIGHT] Statusbar (Filter / Selection etc. totals) */
+	/* [FR] [DROITE] Barre de statut (Totaux Filtre / Sélection etc.) */
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBStatus {
+		margin: -1px 0 0 3px;
+		padding: 5px 5px 0;
+		background: rgb(75,75,75);
+		background: linear-gradient(0deg, rgba(75,75,75,1) 0%, rgba(75,75,75,1) 80%, rgba(157,157,157,1) 95%, rgba(157,157,157,1) 100%);
+		box-shadow: inset 4px 0 4px -4px black, inset -4px 0 4px -4px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBStatus > #HBStatus1 > #Total,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBStatus > #HBStatus2 > #Total {
+		margin: 0 1px;
+		padding: 0px 5px;
+		border-radius: 2px;
+		background: #5b5b5b;
+		box-shadow: inset 0 2px 4px #999999, 0 2px 3px black;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBStatus > #HBStatus1 > #Total > label,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBStatus > #HBStatus2 > #Total > label {
+		color: lightgrey;
+	}
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBStatus > #HBStatus1 > #Total:hover,
+	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #HBStatus > #HBStatus2 > #Total:hover {
+		border-radius: 2px;
+		box-shadow: inset 0 0 4px black;
+	}
+/* [EN] [BOTTOM] Progress bar in Settings > Library > “Check now” and “Analyze now” */
+/* [FR] [BAS] Barre de progression des Réglages > Musithèque > « Vérifier maintenant » et « Analyser maintenant » */
+#Lists_Library_Context > #VBmain > #VBProgress {
+	margin: 0 0 -40px;
+}
+#Lists_Library_Context > #VBmain > #VBProgress > box * {
+	color: white;
+}
+#Lists_Library_Context > #VBmain > #VBProgress > #Progress {
+	margin: -31px 0 32px;
+	background: rgb(51,42,26);
+	background: linear-gradient(180deg, rgba(51,42,26,0.5) 0%, rgba(51,42,26,1) 100%);
+}
+#Lists_Library_Context > #VBmain > #VBProgress > #Progress > box > box > progressbar > trough {
+	margin: -4px 0 10px;
+	border: none;
+	background: lightgrey;
+}
+#Lists_Library_Context > #VBmain > #VBProgress > #Progress > box > box > progressbar > trough > progress {
+	border: solid 1px black;
+	background: grey;
+}
+#Lists_Library_Context > #VBmain > #VBProgress > #Progress > box > box > progressbar > button > image {}
+
+/* [EN] IMAGE BROWSER */
+/* [FR] EXPLORATEUR D'IMAGES */
+#PictureBrowser {
+		padding: 30px;
+		background: #372f1c;
+		box-shadow: inset 0 0 15px 15px black;
+}
+
+/* [EN] For the "Stettings > Library > File types to add" dialog ("Select file types to add" dialog) - Applies to all "dialog" that does not have a top CSS selector */
+/* [FR] Pour le dialogue « Réglages > Musithèque > Types de fichiers à ajouter » (dialogue « Sélectionner les types de fichiers à ajouter ») - S'applique à tous les « dialog » qui n'ont pas de sélecteur CSS supérieur */
+dialog {
+	background: #353535;
+	font-weight: normal;
+}
+dialog > box {
+	padding: 0 5px;
+}
+dialog checkbutton {
+	background: unset;
+	border-radius: 5px;
+}
+dialog checkbutton:hover {
+	background: rgba(255, 255, 255, .2);
+}
+dialog checkbutton > check:hover {
+	background: rgba(255, 255, 255, .5);
+}
+dialog radio:checked {
+	background: black;
+	border: solid 1px #4f4128;
+	box-shadow: 0 0 3px #4f4128;
+}
+dialog menuitem:hover {
+	background: grey;
+}
+
+/* [EN] “Choose a color” dialog */
+/* [FR] Dialogue « Choisissez une couleur » */
+dialog > box > colorchooser > box > box > overlay > grid > button {
+	padding: 0px 8px;
+}
+dialog > box > colorchooser > box > box > overlay > grid > button:hover {
+	box-shadow: inset 0 0 2px black;
+}
+dialog > box > colorchooser > box > box > overlay > grid > colorswatch:hover > overlay {
+	background: unset;
+}
+dialog > box > colorchooser > box > box > overlay > grid > scale {
+	margin: 10px 0;
+	padding: 0;
+}
+dialog > box > colorchooser > box > box > overlay > grid > scale:hover {
+	background: none;
+}
+dialog > box > colorchooser > box > box > overlay > grid > scale > contents > trough {
+	border: none;
+}
+dialog > box > colorchooser > box > box > overlay > grid > scale > contents > trough > slider {
+	margin-left: -18px;
+	padding: 2px 0;
+	background: url("images/slider-color.png") center no-repeat;
+}
+dialog > box > colorchooser > box > box > overlay > grid > scale > contents > trough > slider:hover {
+	background: url("images/slider-color.png") center no-repeat;
+}
+dialog > box > colorchooser > box > label {
+	color: white;
+}
+
+/* [EN] Labels of check boxes and “Types of files to add” input box */
+/* [FR] Libellés des cases à cocher et boîte de saisie des « Types de fichiers à ajouter » */
+dialog > box > grid > checkbutton:hover {
+	background: rgba(255, 255, 255, .2);
+}
+dialog > box > grid > checkbutton > label,
+dialog > box > grid > box > label {
+	color: white;
+}
+/* [EN]Checkboxes for "File types to add", "gstreamer output settings", "ReplayGain options" */
+/* [FR] Cases à cocher des « Types de fichiers à ajouter », « Réglages de la sortie gstreamer », « Options de ReplayGain » */
+dialog > box > checkbutton > check,
+dialog > box > box > checkbutton > check,
+dialog > box > grid > checkbutton > check {
+	background: #5c5c5c;
+	box-shadow: 0 0 2px #808080;
+	border: solid 1px white;
+}
+dialog > box > checkbutton:hover,
+dialog > box > box > checkbutton:hover {
+	background: rgba(255, 255, 255, .2);
+}
+dialog > box > checkbutton:hover > check,
+dialog > box > box > checkbutton:hover > check,
+dialog > box > grid > checkbutton:hover > check {
+	background: rgba(255, 255, 255, .5);
+	box-shadow: 0 0 2px #808080;
+}
+/* [EN] Label of the “Close” button of the “gstreamer output settings” */
+/* [FR] Libellé du bouton « Fermer » des « Réglages de la sortie gstreamer » */
+dialog > box > box > buttonbox > button > widget > box > label {
+	color: white;
+	text-shadow: none;
+}
+/* [EN] "Close" button of "File types to add" - Applies to all "dialog" buttons that do not have a top CSS selector */
+/* [FR] Bouton « Fermer » des « Types de fichiers à ajouter » - S'applique à tous les « button » des « dialog » qui n'ont pas de sélecteur CSS supérieur */
+dialog > box > box > buttonbox > button {
+	background: #808080;
+	box-shadow: 0 0 2px #808080;
+	border: none;
+	color: black;
+	margin: 5px;
+}
+dialog > box > box > buttonbox > button:hover {
+	box-shadow: inset 0 0 10px #333333;
+}
+
+/* [EN] "Settings > Library > Add folder" dialog */
+/* [FR] Dialogue « Réglages > Musithèque > Ajouter un dossier » */
+#ChooseDir > box > box > buttonbox > button:hover {
+	box-shadow: inset 0 0 10px #333333;
+}
+
+/* [EN] “Rename file” dialog */
+/* [FR] Dialogue « Renommer le fichier » */
+#Rename > box {
+	min-width: 320px;
+}
+
+/* [EN] “Mass Renaming” dialog */
+/* [FR] Dialogue « Renommage de masse » */
+#MassRename {}
+#MassRename > box > box > checkbutton:hover {
+	background: none;
+}
+#MassRename > box > box > checkbutton > check {
+	background: grey;
+}
+#MassRename > box > box > checkbutton > check:hover {
+	background: white;
+}
+#MassRename > box > box > widget > widget > label,
+#MassRename > box > box > widget > box > box > label,
+#MassRename > box > box > widget > box > box > box > label {
+	color: white;
+}
+#MassRename > box > box > box > combobox > box > entry > selection,
+#MassRename > box > box > widget > box > box > box > box > combobox > box > entry > selection,
+#MassRename > box > box > widget > box > box > combobox > box > entry > selection {
+	background: grey;
+}
+
+/* [EN]“Filter edit” dialog */
+/* [FR] Dialogue « Édition de filtre » */
+#EditFilter > box > box > box > widget > box > box > combobox > box > button > box > cellview *,
+#EditFilter > box > box > box > widget > box > box > combobox > box > button > box > arrow {
+	color: white;
+}
+#EditFilter > box > box > box > widget > box > box > combobox > box > button > box > cellview:hover {
+	background: unset;
+}
+#EditFilter > box > box > box > widget > box > box > spinbutton > button {
+	color: white;
+}
+
+/* [EN] "About" dialog */
+/* [FR] Dialogue « À propos » */
+dialog {}
+dialog > headerbar {
+	border: none;
+	border-radius: 5px 5px 0 0;
+}
+dialog > headerbar > stackswitcher > button {
+	margin: 5px 2px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background: #596e80;
+	box-shadow: inset 0 0 3px #2c3740;
+}
+dialog > headerbar > stackswitcher > button:hover {
+	background: #404040;
+	box-shadow: inset 0 0 3px black;
+}
+dialog > headerbar > stackswitcher > button:checked {
+	background: #475866;
+	box-shadow: inset 0 0 3px #232c33;
+}
+dialog > headerbar > stackswitcher > button > label {
+	color: white;
+	text-shadow: none;
+}
+dialog > box > box > stack > box > label,
+dialog > box > box > stack > box > link {
+	color: white;
+}
+
+dialog > box > box > stack > box > scrolledwindow > viewport > grid > label,
+dialog > box > box > stack > box > scrolledwindow > textview > text,
+dialog > box > box > stack > box > scrolledwindow > textview > text * {
+	color: black;
+}
+
+dialog > box > box > stack > box > label * {
+	color: white;
+}
+
+/* [EN] "Song Pproperties" dialog */
+/* [FR] Dialogue « Propriétés du morceau » */
+#SongInfo {}
+#SongInfo > box {
+	border: none;
+	margin: 0 -3px 0 -3px;
+	background: black;
+	box-shadow: none;
+}
+#SongInfo > box > box {
+	margin: 0 -2px;
+	background: black;
+}
+#SongInfo > box > box > buttonbox > button {
+	color: white;
+	background: #737373;
+}
+#SongInfo > box > box > buttonbox > button:hover {
+	background: #666666;
+	box-shadow: inset 0 1px 2px 1px black;
+}
+#SongInfo > box > notebook > header {
+	background: black;
+}
+#SongInfo > box > box > buttonbox > button > widget > box > label {
+	color: white;
+	text-shadow: none;
+}
+#SongInfo > box > notebook {
+	border: none;
+	margin: 3px -2px 0;
+}
+#SongInfo > box > notebook > header > tabs {
+	background: black;
+}
+#SongInfo > box > notebook > header > tabs > tab {
+	background: #666666;
+}
+#SongInfo > box > notebook > header > tabs > tab:checked {
+	background: #353535;
+	box-shadow: none;
+}
+#SongInfo > box > notebook > header > tabs > tab > label {
+	background: unset;
+	color: lightgrey;
+	text-shadow: 1px 1px 1px black;
+}
+#SongInfo > box > notebook > stack {
+	padding: 3px 5px 0;
+	background: #353535;
+}
+#SongInfo > box > notebook > stack,
+#SongInfo > box > notebook > stack > box {
+	padding: 3px 5px 0;
+}
+#SongInfo > box > notebook > stack > box > box > box > button:hover {
+	background: #666666;
+	box-shadow: inset 0 1px 2px 1px black;
+}
+#SongInfo > box > notebook > stack > scrolledwindow > viewport > grid {
+	padding: 10px 0;
+}
+#SongInfo > box > notebook > stack > box > box > box > button > box > label,
+#SongInfo > box > notebook > stack > box > box > box > combobox > box > button > box > arrow,
+#SongInfo > box > notebook > stack > box > label {
+	color: white;
+}
+#SongInfo > box > notebook > stack > box > box > box > combobox > box > button:hover {
+	box-shadow: inset 0 0 2px black;
+}
+#SongInfo > box > notebook > stack > box > box > box > combobox > box > button > box > cellview:hover {
+	background: unset;
+}
+#SongInfo > box > notebook > stack > box > box > box > combobox > box > button > box > cellview > * {
+	color: white;
+}
+#SongInfo > box > notebook > stack > box > scrolledwindow > viewport > grid > box > button > label,
+#SongInfo > box > notebook > stack > box > scrolledwindow > viewport > grid > box > checkbutton label,
+#SongInfo > box > notebook > stack > box > scrolledwindow > viewport > grid > box > spinbutton > button,
+#SongInfo > box > notebook > stack > box > scrolledwindow > viewport > grid > spinbutton button {
+	color: white;
+	text-shadow: none;
+}
+#SongInfo > box > notebook > stack > box > scrolledwindow > viewport > grid > box > checkbutton:hover {
+	background: unset;
+}
+#SongInfo > box > notebook > stack > box > scrolledwindow > viewport > grid > box > checkbutton:hover * {
+	color: grey;
+}
+#SongInfo > box > notebook > stack > box > scrolledwindow > viewport > grid > checkbutton {
+	margin: 5px 0;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+#SongInfo > box > notebook > stack > box > scrolledwindow > viewport > grid > checkbutton:hover {
+	background: #4d4d4d;
+}
+
+/* [EN] “Advanced Tags Editing” dialog */
+/* [FR] Dialogue « Édition avancée des tags » */
+#AdvTag * {
+	border: none;
+	box-shadow: none;
+}
+#AdvTag tab,
+#AdvTag tab > label {
+	color: white;
+	background: grey;
+}
+#AdvTag tab:checked {
+	background: #353535;
+}
+#AdvTag tab:checked label {
+	background: #353535;
+}
+#AdvTag > box > box > notebook > header {
+	padding: 5px 0 0;
+	background: black;
+}
+#AdvTag > box > box > notebook > stack > box > scrolledwindow > viewport {
+	padding: 5px 0;
+}
+#AdvTag > box > box > notebook > stack > box > scrolledwindow > viewport,
+#AdvTag > box > box > notebook > stack {
+	background: #353535;
+}
+#AdvTag > box > box > notebook > stack > box > scrolledwindow > viewport > widget > label,
+#AdvTag > box > box > notebook > stack > box > scrolledwindow > viewport > widget > frame > label,
+#AdvTag > box > box > notebook > stack > box > scrolledwindow > viewport > widget > frame > widget > label {
+	color: white;
+	text-shadow: none;
+}
+#AdvTag > box > box > notebook > stack > box > box > combobox > box > button > box > arrow,
+#AdvTag > box > box > notebook > stack > box > box > combobox > box > button > box > cellview *,
+#AdvTag > box > box > notebook > stack > box > box > button > box > label,
+#AdvTag > box > box > buttonbox > button > widget > box > label,
+#AdvTag > box > box > notebook > stack > box > widget > checkbutton > label,
+#AdvTag > box > box > notebook > stack > box > widget > label,
+#AdvTag > box > box > notebook > stack > box > checkbutton > label {
+	color: white;
+}
+#AdvTag > box > box > notebook > stack > box > box > combobox > box > button > box > cellview:hover,
+#AdvTag > box > box > notebook > stack > box > checkbutton:hover,
+#AdvTag > box > box > notebook > stack > box > widget > checkbutton:hover {
+	background: unset;
+}
+
+/* [EN] Properties Of Multiple Songs */
+/* [FR] Propriétés de plusieurs morceaux */
+/*#MassTag * {
+	color: black;
+}*/
+#MassTag > headerbar > box > label {
+	color: white;
+}
+#MassTag > headerbar > box > button {
+	margin-top: 3px;
+}
+#MassTag > headerbar > box > button > image {
+	color: white;
+}
+#MassTag > box > box > paned > box > scrolledwindow > viewport > widget > spinbutton > button,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > spinbutton > button,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > spinbutton > button {
+	color: white;
+	border: none;
+	border-radius: unset;
+	box-shadow: inset 0 0 3px #333333;
+}
+#MassTag > box > box > buttonbox > button:hover,
+#MassTag > box > box > box > combobox > box > button:hover,
+#MassTag > box > box > box > button:hover,
+#MassTag > box > box > paned > box > box > button:hover,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > box > button:hover {
+	box-shadow: none;
+}
+#MassTag > box > box > box > button > label,
+#MassTag > box > box > box > checkbutton > label,
+#MassTag > box > box > box > combobox > box > button > box > arrow,
+#MassTag > box > box > box > combobox > box > button > box > cellview > *,
+#MassTag > box > box > buttonbox > button > widget > box > label,
+#MassTag > box > box > label,
+#MassTag > box > box > paned > box > box > button > label,
+#MassTag > box > box > paned > box > box > expander > title > arrow,
+#MassTag > box > box > paned > box > box > expander > title > label,
+#MassTag > box > box > paned > box > scrolledwindow > viewport > widget > box > checkbutton > label,
+#MassTag > box > box > paned > box > scrolledwindow > viewport > widget > checkbutton > label,
+#MassTag > box > box > paned > box > scrolledwindow > viewport > widget > label,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > box > button > box > label,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > box > button > label,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > box > label,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > checkbutton > label,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > combobox > box > button > box > arrow,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > checkbutton > label {
+	color: white;
+}
+#MassTag > box > box > paned > box > scrolledwindow > viewport > widget > box > checkbutton,
+#MassTag > box > box > paned > box > scrolledwindow > viewport > widget > checkbutton,
+#MassTag > box > box > paned > box > box > expander > title:hover,
+#MassTag > box > box > paned > box > box > expander > title:hover * {
+	background: unset;
+}
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > button:hover,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > combobox > box > button:hover,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > spinbutton > button:hover {
+	box-shadow: inset 0 0 3px #333333;
+}
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > checkbutton:hover {
+	background: unset;
+}
+#MassTag > box > box > box > checkbutton:hover *,
+#MassTag > box > box > paned > box > box > expander > title:hover *,
+#MassTag > box > box > paned > box > scrolledwindow > viewport > widget > box > checkbutton:hover > label,
+#MassTag > box > box > paned > box > scrolledwindow > viewport > widget > checkbutton:hover > label,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > checkbutton:hover > label,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > checkbutton:hover * {
+	color: grey;
+}
+#MassTag > box > box > box > checkbutton,
+#MassTag > box > box > paned > box > scrolledwindow > viewport > widget > box > checkbutton,
+#MassTag > box > box > paned > box > scrolledwindow > viewport > widget > checkbutton,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > checkbutton,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > checkbutton {
+	margin: 5px 0;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+#MassTag > box > box > box > checkbutton:hover,
+#MassTag > box > box > paned > box > scrolledwindow > viewport > widget > box > checkbutton:hover,
+#MassTag > box > box > paned > box > scrolledwindow > viewport > widget > checkbutton:hover,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > box > checkbutton:hover,
+#MassTag > box > box > paned > scrolledwindow > viewport > grid > checkbutton:hover {
+	background: #4d4d4d;
+}
+#MassTag > box > box > box > combobox > box > button > box > cellview:hover,
+#MassTag > box > box > box > checkbutton {
+	background: unset;
+}
+#MassTag > box > box > paned > * {
+	margin: 0 0 2px;
+	padding: 2px 0;
+}
+	/* [EN] ↳ “Custom auto-fill filename formats” dialog */
+	/* [FR] ↳ Dialogue « Remplir automatiquement d'après les noms de fichiers » */
+	#AutofillFormats > box > paned > box > box > label,
+	#AutofillFormats > box > paned > box > buttonbox > button > box > label,
+	#AutofillFormats > box > paned > box > checkbutton > label,
+	#AutofillFormats > box > paned > box > label,
+	#AutofillFormats > box > paned > box > widget > widget > label {
+		color: white;
+	}
+	#AutofillFormats > box > paned > box > checkbutton:hover {
+		border-radius: 5px;
+		background: #4d4d4d;
+	}
+	#AutofillFormats > box > paned > box > buttonbox > button:hover {
+		box-shadow: inset 0 0 3px #333333;
+	}
+
+/* [EN] Song Browser */
+/* [FR] Explorateur de morceaux */
+	/* [EN] */
+	/* [FR] ... dont les onglets */
+	#Browser #FilterPane tabs {
+		border: none;
+		background-image: none;
+		background: #d9d9d9;
+	}
+	/* [EN] ... and the color of their texts */
+	/* [FR] ... et la couleur de leurs textes */
+	#Browser	#FilterPane tab {
+		color: black;
+	}
+	/* [EN] ... including the active tab */
+	/* [FR] ... dont l'onglet actif */
+	#Browser	#FilterPane tab:checked {
+		color: #f6f3ed;
+		font-weight: bold;
+		background: #b3b3b3;
+		border: none;
+		box-shadow:none;
+	}
+	/* [EN] Selected row */
+	/* [FR] Ligne sélectionnée */
+	#Browser	#SongList treeview:selected {
+ 	 background-color: #d8d8d8;
+ 	 color: #372f1c;
+	}
+
+/* [EN] "Choose a folder to add" dialog */
+/* [FR] Dialogue « Choisir un dossier à ajouter » */
+#ChooseDir > box > box > buttonbox > button:hover {
+	border-radius: 8px;
+}
+#ChooseDir > box > filechooser > actionbar > revealer > box > box > combobox > box > button > box > cellview:hover {
+	background: unset;
+}
+
+/* [EN] "Random mode edition" dialog */
+/* [FR] Dialogue « Édition des modes de hasard » */
+#EditWRandom > box > box > box > button > box > label,
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > label,
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > checkbutton > label,
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > label,
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > scale *,
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > label,
+#EditWRandom > box > box > box > box > label,
+#EditWRandom > box > box > box > box > combobox > box > button > box > arrow,
+#EditWRandom > box > box > box > box > combobox > box > button > box > cellview *,
+#EditWRandom > box > box > box > box > button > box > label,
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > combobox > box > button > box > cellview > * {
+	color: white;
+	text-shadow : none;
+}
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > combobox > box > button > box >  arrow,
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > grid > spinbutton > button {
+	color: white;
+}
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > scale {
+	border-radius: 5px;
+}
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > scale:hover {
+	background: unset;
+}
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > scale > contents > trough {
+	background: rgba(255, 255, 255, .2);
+	min-height: 1px;
+}
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > scale > contents > trough > highlight  {
+	background: rgba(255, 255, 255, .5);
+}
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > button:hover,
+#EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box *:hover,
+#EditWRandom > box > box > box > button:hover,
+#EditWRandom > box > box > box > box *:hover {
+	background: #666666;
+	box-shadow: unset;
+}
+
+/* [EN] "Filter edition" dialog */
+/* [FR] Dialogue « Édition de filtre » */
+#EditFilter > box > box > box > widget > box > button > label,
+#EditFilter > box > box > box > widget > box > combobox > box > button > box *,
+#EditFilter > box > box > box > widget > box > combobox > box > button > box > cellview *,
+#EditFilter > box > box > box > widget > box > radiobutton > label,
+#EditFilter > box > box > box > scrolledwindow > treeview > header > button > box > widget > label,
+#EditFilter > box > box > box > button > box > label,
+#EditFilter > box > box > box > buttonbox > button > box > label {
+	color: white;
+}
+#EditFilter > box > box > box > widget > box > radiobutton:hover,
+#EditFilter > box > box > box > widget > box > combobox > box > button > box *:hover {
+	background: unset;
+}
+#EditFilter > box > box > box > widget > box > radiobutton:hover > label {
+	color: grey;
+}
+#EditFilter > box > box > box > box > button:hover,
+#EditFilter > box > box > box > button:hover,
+#EditFilter > box > box > box > buttonbox > button:hover {
+	box-shadow: inset 0 0 3px #4d4d4d;
+}
+
+/* [EN] “SongTree groupings edition” dialog */
+/* [FR] Dialogue « Édition des regroupements de l'arbre des morceaux » */
+#EditSTGroupings > box > box > box > button:hover,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > combobox > box > button:hover {
+	box-shadow: inset 0 0 3px #4d4d4d;
+}
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > combobox > box > button:hover > box > cellview {
+	background: unset;
+}
+#EditSTGroupings > box > box > box > button > box > label,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > label,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > combobox > box > button > box > cellview > *,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > combobox > box > button > box > arrow,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > title > label,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > title > arrow,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > widget > label,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > widget > checkbutton > label,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > widget > button,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > widget > button > box > label,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > widget > button > box > box > label,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > widget > spinbutton > button {
+	color: white;
+	border: none;
+	box-shadow: unset;
+}
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > title {
+	padding: 0 5px 2px 2px;
+}
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > title:hover,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > title:hover label,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > title:hover arrow,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > widget > checkbutton:hover,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > widget > checkbutton:hover label,
+#EditSTGroupings > box > box > box > scrolledwindow > viewport > box > box > box > expander > widget > checkbutton:hover arrow {
+	border-radius: 5px;
+	background: #4d4d4d;
+}
+	/* [EN] ↳ “Choose font” dialog */
+	/* [FR] ↳ Dialogue « Choisissez une police » */
+	dialog > box > fontchooser > stack > grid > stack > grid > scale > contents > trough {
+		margin: 12px 0 8px;
+		min-height: 1px;
+		border: none;
+		background: grey;
+}
+	dialog > box > fontchooser > stack > grid > stack > grid > scale > contents > trough > slider {
+		border: none;
+		background: url("images/slider.png") center no-repeat;
+		min-width: 25px;
+		min-height: 25px;
+	}
+	dialog > box > fontchooser > stack > grid > stack > grid > scale > contents > trough > slider:hover {
+		background: url("images/slider.png") center no-repeat;
+	}
+	dialog > box > fontchooser > stack > grid > stack > grid > scale > contents > trough > highlight {
+		margin: 0;
+		border: solid 1px #80b8ff;
+	}
+	dialog > box > fontchooser > stack > grid > stack > grid > scale > marks > mark > indicator {
+		color: white;
+	}
+	dialog > box > fontchooser > stack > grid > stack > grid > scale:hover {
+		background: unset;
+	}
+	dialog > box > fontchooser > stack > grid > stack > grid > spinbutton > button {
+		color: white;
+		border: none;
+		box-shadow: unset;
+	}
+	dialog > box > fontchooser > stack > grid > stack > grid > spinbutton > button:hover {
+		border-radius: 0;
+		box-shadow: inset 0 0 3px #333333;
+	}
+
+/* [EN] “Edit row tip” dialog */
+/* [FR] Dialogue « Éditer l'infobulle des lignes » */
+#RowTip > box {
+	padding: 0 10px;
+}
+#RowTip > box > label {
+	color: white;
+}
+#RowTip > box > box > buttonbox > button:hover,
+#RowTip > box > combobox > box > button:hover {
+	box-shadow: none;
+}
+
+/* [EN] “Sort mode editing” dialog */
+/* [FR] Dialogue « Édition du mode de tri » */
+#EditSort > box > box > box > button:hover,
+#EditSort > box > box > box > grid > box > button:hover,
+#EditSort > box > box > box > grid > button:hover {
+	box-shadow: inset 0 0 2px black;
+}
+#EditSort > box > box > box > button > box > label,
+#EditSort > box > box > box > grid > button > box > label {
+	color: white
+}
+
+/* [EN] Picture Browser */
+/* [FR] Explorateur d'images */
+#PictureBrowser {
+	min-width: 500px;
+	min-height: 500px;
+}
+#PictureBrowser window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#PictureBrowser window > menu {
+	padding: 1px 0 2px;
+	background: linear-gradient(0deg, rgba(102,86,52,1) 0%, rgba(204,183,157,1) 100%);
+	box-shadow: unset;
+	border-radius: 8px;
+}
+#PictureBrowser window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#PictureBrowser window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#PictureBrowser window > menu * {
+	color: white;
+}
+#PictureBrowser window > menu > menuitem > radio,
+#PictureBrowser window > menu > menuitem > check {
+	border: solid 1px white;
+}
+#PictureBrowser window > menu > separator  {
+	margin: 4px 15px;
+	min-height: 1px;
+	background: rgba(0, 0, 0, .4);
+	border-bottom: solid 1px rgba(255, 255, 255, .4);
+}
+#PictureBrowser window arrow:hover {
+	background: unset;
+}
+
+/* [EN] “Queue editing” dialog */
+/* [FR] Dialogue « Édition de la file d'attente » */
+#Queue > #VBmain {
+	margin-top: -2px;
+	background: #4d4d4d;
+}
+#Queue > #VBmain > #QueueList {
+	min-width: 1200px;
+	min-height: 800px;
+	border: none;
+}
+#Queue > #VBmain > #QueueList > treeview > header > button {
+	background: #808080;
+}
+#Queue > #VBmain > #QueueList > treeview > header > button > box > widget > label {
+	color: white;
+}
+#Queue > #VBmain > #QueueList > treeview > * {
+	background: #fffbf2;
+}
+#Queue > #VBmain > #QueueList > treeview > *:hover {
+	background: #e6decf;
+}
+#Queue > #VBmain > #QueueList > treeview > *:selected {
+	background: #ccc5b8;
+}
+#Queue > #VBmain > #HBButtons {
+	margin: 1px 3px 5px;
+}
+#Queue > #VBmain > #HBButtons > #EditListButtons > button,
+#Queue > #VBmain > #HBButtons > #QueueActions > spinbutton,
+#Queue > #VBmain > #HBButtons > #QueueActions > widget > combobox > box > button {
+	background: grey;
+	border: none;
+}
+#Queue > #VBmain > #HBButtons > #EditListButtons > button > box > label,
+#Queue > #VBmain > #HBButtons > #QueueActions > spinbutton > button > label,
+#Queue > #VBmain > #HBButtons > #QueueActions > widget > combobox > box > button > box > cellview > *,
+#Queue > #VBmain > #HBButtons > #QueueActions > widget > combobox > box > button > box > arrow {
+	color: white;
+	text-shadow: none;
+}
+#Queue > #VBmain > #HBButtons > #EditListButtons > button:hover,
+#Queue > #VBmain > #HBButtons > #QueueActions > spinbutton > button:hover,
+#Queue > #VBmain > #HBButtons > #QueueActions > widget > combobox > box > button:hover {
+	background: grey;
+	box-shadow: inset 0 0 3px black;
+}
+#Queue > #VBmain > #HBButtons > #QueueActions > widget > combobox > box > button:hover > box > cellview {
+	background: grey;
+}
+#Queue > #VBmain > box > box > widget > combobox > window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#Queue > #VBmain > box > box > widget > combobox > window > menu {
+	padding: 1px 0 2px;
+	background: linear-gradient(0deg, rgba(50, 50, 50, 1) 0%, rgba(100, 100, 100, 1) 100%);
+	box-shadow: unset;
+	border-radius: 8px;
+}
+#Queue > #VBmain > box > box > widget > combobox > window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#Queue > #VBmain > box > box > widget > combobox > window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#Queue > #VBmain > box > box > widget > combobox > window > menu > menuitem > cellview > * {
+	color: white;
+}
+
+/* [EN] File Browser ("Set image", "Export to .m3u file") */
+/* [FR] Explorateur de fichiers (« Définir une image », « Exporter en fichier .m3u ») */
+#Browser {
+	background: lightgrey;
+}
+dialog > box {
+	margin: 0 -3px;
+
+}
+dialog > box > filechooser > box > paned > box > box > box > box > label,
+dialog > box > filechooser > box > paned > box > box > box > label,
+dialog > box > filechooser > box > paned > box > revealer > box > stack > box > widget > button > label {
+	color: white;
+}
+dialog > box > filechooser > actionbar > revealer > box > box > combobox > box > button > box > cellview:hover {
+	background: unset;
+}
+dialog > box > filechooser > actionbar > revealer > box > box > combobox > box > button > box > cellview *,
+dialog > headerbar > box > label,
+dialog > headerbar > button > label,
+dialog > headerbar > button > widget > box > label {
+	color: white;
+	text-shadow: none;
+}
+dialog > headerbar {
+	background: rgb(55,120,174);
+	background: linear-gradient(180deg, rgba(55,120,174,1) 0%, rgba(54,108,153,1) 100%);
+}
+dialog > headerbar > box {
+	margin-right: 10px;
+
+}
+dialog > headerbar > button {
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+dialog > box > filechooser > box > paned > box > box > stack > box > scrolledwindow > treeview > header > button {
+	background: #b8c9e6;
+	box-shadow: none;
+}
+dialog > box > filechooser > box > paned > box > box > box > label {
+	color: white;
+}
+dialog > box > filechooser > box > paned > box > box > box {
+	margin: 0 0 0 -10px;
+	padding: 8px 10px 0;
+	background: black;
+}
+dialog > box > filechooser > actionbar > revealer > box {
+	border: none;
+}
+
+/* [EN] Confirmation dialog before deleting label */
+/* [FR] Dialogue de confirmation avant suppression d'étiquette */
+messagedialog {
+	background: #353535;
+}
+messagedialog > decoration {
+	padding: unset;
+	background: #3772a4;
+	border: unset;
+}
+messagedialog > box {
+	padding: 0 20px;
+	background: unset;
+	border: unset;
+	box-shadow: unset;
+}
+messagedialog > box > box {
+	background: unset;
+	border: unset;
+}
+messagedialog > box > * {}
+messagedialog > box > box > box {
+	margin-top: 10px;
+	padding-left: 70px;
+	min-height: 38px;
+	background: url("images/gtk-dialog-warning.png") left no-repeat;
+	border: unset;
+}
+messagedialog > box > box > box > label,
+messagedialog > box > expander > label,
+messagedialog > box > expander > title > arrow,
+messagedialog > box > expander > title > label {
+	color: white;
+}
+messagedialog > box > box > buttonbox {
+	margin: 0 5px 10px;
+}
+messagedialog > box > box > buttonbox > button {
+	margin: 0 50px 0;
+	min-width: 140px;
+	border: unset;
+	border-radius: 5px;
+	box-shadow: unset;
+}
+messagedialog > box > box > buttonbox > button:first-child {
+	background: #808080, url("images/gtk-cancel.png") 20px no-repeat;
+}
+messagedialog > box > box > buttonbox > button:nth-child(2) {
+	background: #808080, url("images/gtk-apply.png") 20px no-repeat;
+}
+messagedialog > box > box > buttonbox > button:hover {
+	box-shadow: inset 0 0 3px #333333;
+}
+messagedialog > box > box > buttonbox > button > label,
+messagedialog > box > box > buttonbox > button label {
+	color: white;
+}
+messagedialog > box > checkbutton {
+	margin: 0 10px;
+}
+messagedialog > box > checkbutton > label {
+	color: white;
+}
+messagedialog > box > checkbutton:hover {
+	color: white;
+	background: #4d4d4d;
+	border-radius: 5px;
+}
+messagedialog > box > checkbutton:hover > label {
+	color: white;	
+}
+
+/* [EN] Compact player */
+/* [FR] Lecteur compact */
+#Compact_player {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#Compact_player radio {
+	border: solid 1px lightgrey;
+}
+#Compact_player check {
+	color: white;
+}
+#Compact_player radio:checked {
+	color: lightgrey;
+}
+#Compact_player > #HBmain > #VBmain > #HBIndic > #MBMenu {
+	margin: 0 5px 0 0;
+	background-color: unset;
+	background-image: url("images/gmb-menu-light16.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#Compact_player > #HBmain > #VBmain > #HBIndic > #MBMenu > #SMMenu {
+	padding: 0 5px;
+	min-width: 16px;
+	background-color: unset;
+	border-radius: 5px;
+}
+#Compact_player > #HBmain > #VBmain > #HBIndic > #MBMenu > #SMMenu:hover {
+	background-color: unset;
+	box-shadow: inset 0 0 3px black;
+}
+#Compact_player > #HBmain button {
+	background: unset;
+}
+#Compact_player > #HBmain button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+/*#Compact_player > #HBmain > #HBArtistPic {
+	margin-right: 5px;	
+}*/
+#Compact_player > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Next,
+#Compact_player > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Play,
+#Compact_player > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Prev,
+#Compact_player > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Stop {}
+#Compact_player > #HBmain > #VBmain > #HBButtons > #HBButtons1 > button,
+#Compact_player > #HBmain > #VBmain > #HBButtons > #HBButtons2 > button {
+	margin: 0;
+	padding: 0 2px;
+}
+#Compact_player > #HBmain > #VBmain > #HBButtons > #HBButtons2 {}
+#Compact_player > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #Button {
+	margin-right: 2px;
+}
+#Compact_player > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #OpenBrowser,
+#Compact_player > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #PluginRip {
+	margin: 0 2px;
+}
+#Compact_player > #HBmain > #VBmain > #HBIndic {
+	margin: 0 0 -3px;
+}
+#Compact_player > #HBmain > #VBmain > #HBIndic > #Filter > image,
+#Compact_player > #HBmain > #VBmain > #HBIndic > #Queue > image,
+#Compact_player > #HBmain > #VBmain > #HBIndic > #Sort > image {
+	margin-right: 5px;
+}
+#Compact_player > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #LockSong > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-song.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#Compact_player > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #LockAlbum > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-album.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#Compact_player > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #LockArtist > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-artist.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#Compact_player > #HBmain > #Cover > label,
+#Compact_player > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #Title > label,
+#Compact_player > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #Album > label,
+#Compact_player > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #Artist > label {
+	padding-left: 5px;
+}
+#Compact_player window > menu {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#Compact_player window > menu > menuitem > label,
+#Compact_player window > menu > menuitem > arrow {
+	color: white;
+}
+#Compact_player > box > box > box > box > widget > label,
+#Compact_player > box > box > box > widget > label {
+	color: white;
+	border-radius: 25px;
+}
+#Compact_player > #HBmain > #VBmain > #HBTime {}
+#Compact_player > #HBmain > #VBmain > #HBTime > #Time > label {
+	color: white;
+	text-shadow: 0 0 2px black;
+	margin-top: 3px;
+	border-radius: 2px;
+	background: #808080;
+}
+#Compact_player > #HBmain > #VBmain > #HBStarLab > #LabelsIcons {
+	margin: 0 0 0 0;
+	padding: 4px 7px 0 0;
+	background: #808080;
+	border-radius: 0 2px 2px 0
+}
+#Compact_player > #HBmain > #VBmain > #HBStarLab > #LabelsIcons image {
+	margin: 0px 0 0 5px;
+}
+#Compact_player > #HBmain > #VBmain > #HBStarLab > #Stars > image {
+	margin-left: 0;
+	padding: 0 3px;
+	background: #999999;
+	border-radius: 2px 0 0 2px;
+}
+#Compact_player > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar {
+	margin-left: 5px;
+}
+#Compact_player > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough {
+	margin-bottom: 8px;
+	box-shadow: 1px 1px 2px #4c4c4c;
+	background: #f6f6f6;
+	border: solid 1px #b5b5b5;
+	border-radius: 1px;
+}
+#Compact_player > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough > progress {
+	background: #1d1d1d;
+	border: solid 1px #1d1d1d;
+}
+
+/* [EN] With queue */
+/* [FR] Avec file d'attente */
+#with_queue {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#with_queue radio {
+	border: solid 1px lightgrey;
+}
+#with_queue radio:checked {
+	color: lightgrey;
+}
+#with_queue button:hover * {
+	background: unset;
+}
+/*#with_queue > #HBmain > #HBArtistPic {
+	margin-right: 5px;	
+}*/
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Next,
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Play,
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Prev,
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Stop {
+	margin-right: 5px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBButtons > #HBButtons1 > button,
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBButtons > #HBButtons2 > button {
+	margin: 0;
+	padding: 0 2px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBButtons > #HBButtons2 {
+	margin-bottom: 4px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #Button {
+	margin-right: 2px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #OpenBrowser,
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #PluginRip {
+	margin: 0 2px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBIndic {
+	margin: 0 0 -3px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBIndic > #Filter > image,
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBIndic > #Queue > image,
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBIndic > #Sort > image {
+	margin-right: 5px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #LockSong > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-song.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #LockAlbum > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-album.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #LockArtist > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-artist.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #Title > label,
+#with_queue > #VBmain2 > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #Album > label,
+#with_queue > #VBmain2 > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #Artist > label {
+	padding-left: 5px;
+}
+#with_queue window > menu {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#with_queue * {
+	color: white;
+}
+#with_queue > #VBmain2 > #VBQueue > #HBQueueButtons {
+	margin-top: 5px;
+}
+#with_queue > #VBmain2 > #VBQueue > #HBQueueButtons > #EditListButtons > button {
+	background: #555;
+}
+#with_queue header * {
+	color: white;
+	background: #333;
+}
+#with_queue header * {
+	color: white;
+	background: #333;
+}
+#with_queue > #VBmain2 > #VBQueue > #QueueList > treeview > * {
+	background: #555;
+}
+#with_queue > #VBmain2 > #VBQueue > #QueueList > treeview * {
+	color: white;
+}
+#with_queue > #VBmain2 > #VBQueue > #QueueList > treeview > *:hover {
+	background: grey;
+}
+#with_queue > #VBmain2 > #VBQueue > #QueueList > treeview > *:selected {
+	background: black;
+}
+#with_queue > #VBmain2 > #VBQueue > #HBQueueButtons {
+	margin-top: 5px;
+}
+#with_queue > #VBmain2 > #VBQueue > #HBQueueButtons > #EditListButtons > button,
+#with_queue > #VBmain2 > #VBQueue > #HBQueueButtons > #QueueActions > widget > combobox > box > button {
+	background: #555;
+	box-shadow: unset;
+}
+#with_queue > #VBmain2 > #VBQueue > #HBQueueButtons > #EditListButtons > button:hover,
+#with_queue > #VBmain2 > #VBQueue > #HBQueueButtons > #QueueActions > widget > combobox > box > button:hover {
+	background: #666;
+}
+#with_queue > box > box > box > box > widget > label,
+#with_queue > box > box > box > widget > label {
+	color: white;
+	border-radius: 25px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBTime {}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBTime > #Time > label {
+	color: white;
+	text-shadow: 0 0 2px black;
+	margin-top: 3px;
+	border-radius: 2px;
+	background: #808080;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBStarLab > #LabelsIcons {
+	margin: 0 0 0 0;
+	padding: 4px 7px 0 0;
+	background: #808080;
+	border-radius: 0 2px 2px 0
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBStarLab > #LabelsIcons image {
+	margin: 0px 0 0 5px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBStarLab > #Stars > image {
+	margin-left: 0;
+	padding: 0 3px;
+	background: #999999;
+	border-radius: 2px 0 0 2px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar {
+	margin-left: 5px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough {
+	margin-bottom: 8px;
+	box-shadow: 1px 1px 2px #4c4c4c;
+	background: #f6f6f6;
+	border: solid 1px #b5b5b5;
+	border-radius: 1px;
+}
+#with_queue > #VBmain2 > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough > progress {
+	background: #1d1d1d;
+	border: solid 1px #1d1d1d;
+}
+
+/* [EN] With search */
+/* [FR] Avec recherche */
+#with_search {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#with_search radio {
+	border: solid 1px lightgrey;
+}
+#with_search radio:checked {
+	color: lightgrey;
+}
+/*#with_search > #HBmain > #HBArtistPic {
+	margin-right: 5px;	
+}*/
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Next,
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Play,
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Prev,
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Stop {
+	margin-right: 5px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBButtons > #HBButtons1 > button,
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBButtons > #HBButtons2 > button {
+	margin: 0;
+	padding: 0 2px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBButtons > #HBButtons2 {
+	margin-bottom: 4px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #Button {
+	margin-right: 2px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #OpenBrowser,
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #PluginRip {
+	margin: 0 2px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBIndic {
+	margin: 0 0 -3px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBIndic > #Filter > image,
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBIndic > #Queue > image,
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBIndic > #Sort > image {
+	margin-right: 5px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #LockSong > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-song.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #LockAlbum > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-album.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #LockArtist > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-artist.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_search > #HBmain > #Cover > label,
+#with_search > #VBmain > box > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #Title > label,
+#with_search > #VBmain > box > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #Album > label,
+#with_search > #VBmain > box > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #Artist > label {
+	padding-left: 5px;
+}
+#with_search,
+#with_search treeview,
+#with_search window > menu {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#with_search label,
+#with_search treeview,
+#with_search arrow {
+	color: white;
+}
+#with_search header * {
+	color: white;
+	background: #333;
+}
+#with_search treeview {
+	background: #555;
+}
+#with_search treeview * {
+	color: white;
+}
+#with_search > box > box > box > box > widget > label,
+#with_search > box > box > box > widget > label {
+	color: white;
+	border-radius: 25px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBTime {}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBTime > #Time > label {
+	color: white;
+	text-shadow: 0 0 2px black;
+	margin-top: 3px;
+	border-radius: 2px;
+	background: #808080;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #LabelsIcons {
+	margin: 0 0 0 0;
+	padding: 4px 7px 0 0;
+	background: #808080;
+	border-radius: 0 2px 2px 0
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #LabelsIcons image {
+	margin: 0px 0 0 5px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #Stars > image {
+	margin-left: 0;
+	padding: 0 3px;
+	background: #999999;
+	border-radius: 2px 0 0 2px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar {
+	margin-left: 5px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough {
+	margin-bottom: 8px;
+	box-shadow: 1px 1px 2px #4c4c4c;
+	background: #f6f6f6;
+	border: solid 1px #b5b5b5;
+	border-radius: 1px;
+}
+#with_search > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough > progress {
+	background: #1d1d1d;
+	border: solid 1px #1d1d1d;
+}
+
+/* [EN] With playlist */
+/* [FR] Avec liste de lecture */
+#with_playlist {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#with_playlist radio {
+	border: solid 1px lightgrey;
+}
+#with_playlist radio:checked {
+	color: lightgrey;
+}
+/*#with_playlist > #HBmain > #HBArtistPic {
+	margin-right: 5px;	
+}*/
+#with_playlist > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Next,
+#with_playlist > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Play,
+#with_playlist > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Prev,
+#with_playlist > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Stop {
+	margin-right: 5px;
+}
+#with_playlist > #HBmain > #VBmain > #HBButtons > #HBButtons1 > button,
+#with_playlist > #HBmain > #VBmain > #HBButtons > #HBButtons2 > button {
+	margin: 0;
+	padding: 0 2px;
+}
+#with_playlist > #HBmain > #VBmain > #HBButtons > #HBButtons2 {
+	margin-bottom: 4px;
+}
+#with_playlist > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #Button {
+	margin-right: 2px;
+}
+#with_playlist > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #OpenBrowser,
+#with_playlist > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #PluginRip {
+	margin: 0 2px;
+}
+#with_playlist > #HBmain > #VBmain > #HBIndic {
+	margin: 0 0 -3px;
+}
+#with_playlist > #HBmain > #VBmain > #HBIndic > #Filter > image,
+#with_playlist > #HBmain > #VBmain > #HBIndic > #Queue > image,
+#with_playlist > #HBmain > #VBmain > #HBIndic > #Sort > image {
+	margin-right: 5px;
+}
+#with_playlist > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #LockSong > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-song.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_playlist > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #LockAlbum > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-album.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_playlist > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #LockArtist > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-artist.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_playlist > #HBmain > #Cover > label,
+#with_playlist > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #Title > label,
+#with_playlist > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #Album > label,
+#with_playlist > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #Artist > label {
+	padding-left: 5px;
+}
+#with_playlist window > menu {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#with_playlist window > menu > menuitem > label,
+#with_playlist window > menu > menuitem > arrow {
+	color: white;
+}
+#with_playlist > box > box > box > box > widget > label,
+#with_playlist > box > box > box > widget > label {
+	color: white;
+	border-radius: 25px;
+}
+#with_playlist > #VBmain > box > #HBmain > #VBmain > #HBTime {}
+#with_playlist > #VBmain > box > #HBmain > #VBmain > #HBTime > #Time > label {
+	color: white;
+	text-shadow: 0 0 2px black;
+	margin-top: 3px;
+	border-radius: 2px;
+	background: #808080;
+}
+#with_playlist > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #LabelsIcons {
+	margin: 0 0 0 0;
+	padding: 4px 7px 0 0;
+	background: #808080;
+	border-radius: 0 2px 2px 0
+}
+#with_playlist > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #LabelsIcons image {
+	margin: 0px 0 0 5px;
+}
+#with_playlist > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #Stars > image {
+	margin-left: 0;
+	padding: 0 3px;
+	background: #999999;
+	border-radius: 2px 0 0 2px;
+}
+#with_playlist > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar {
+	margin-left: 5px;
+}
+#with_playlist > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough {
+	margin-bottom: 8px;
+	box-shadow: 1px 1px 2px #4c4c4c;
+	background: #f6f6f6;
+	border: solid 1px #b5b5b5;
+	border-radius: 1px;
+}
+#with_playlist > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough > progress {
+	background: #1d1d1d;
+	border: solid 1px #1d1d1d;
+}
+
+/* [EN] With lists */
+/* [FR] Avec listes */
+#with_lists {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#with_lists radio {
+	border: solid 1px lightgrey;
+}
+#with_lists radio:checked {
+	color: lightgrey;
+}
+/*#with_lists > #HBmain > #HBArtistPic {
+	margin-right: 5px;	
+}*/
+#with_lists > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Next,
+#with_lists > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Play,
+#with_lists > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Prev,
+#with_lists > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Stop {
+	margin-right: 5px;
+}
+#with_lists > #HBmain > #VBmain > #HBButtons > #HBButtons1 > button,
+#with_lists > #HBmain > #VBmain > #HBButtons > #HBButtons2 > button {
+	margin: 0;
+	padding: 0 2px;
+}
+#with_lists > #HBmain > #VBmain > #HBButtons > #HBButtons2 {
+	margin-bottom: 4px;
+}
+#with_lists > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #Button {
+	margin-right: 2px;
+}
+#with_lists > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #OpenBrowser,
+#with_lists > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #PluginRip {
+	margin: 0 2px;
+}
+#with_lists > #HBmain > #VBmain > #HBIndic {
+	margin: 0 0 -3px;
+}
+#with_lists > #HBmain > #VBmain > #HBIndic > #Filter > image,
+#with_lists > #HBmain > #VBmain > #HBIndic > #Queue > image,
+#with_lists > #HBmain > #VBmain > #HBIndic > #Sort > image {
+	margin-right: 5px;
+}
+#with_lists > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #LockSong > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-song.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_lists > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #LockAlbum > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-album.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_lists > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #LockArtist > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-artist.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_lists > #HBmain > #Cover > label,
+#with_lists > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #Title > label,
+#with_lists > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #Album > label,
+#with_lists > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #Artist > label {
+	padding-left: 5px;
+}
+#with_lists window > menu {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#with_lists window > menu > menuitem > label,
+#with_lists window > menu > menuitem > arrow {
+	color: white;
+}
+#with_lists > box > box > box > box > widget > label,
+#with_lists > box > box > box > widget > label {
+	color: white;
+	border-radius: 25px;
+}
+#with_lists > #VBmain > box > #HBmain > #VBmain > #HBTime {}
+#with_lists > #VBmain > box > #HBmain > #VBmain > #HBTime > #Time > label {
+	color: white;
+	text-shadow: 0 0 2px black;
+	margin-top: 3px;
+	border-radius: 2px;
+	background: #808080;
+}
+#with_lists > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #LabelsIcons {
+	margin: 0 0 0 0;
+	padding: 4px 7px 0 0;
+	background: #808080;
+	border-radius: 0 2px 2px 0
+}
+#with_lists > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #LabelsIcons image {
+	margin: 0px 0 0 5px;
+}
+#with_lists > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #Stars > image {
+	margin-left: 0;
+	padding: 0 3px;
+	background: #999999;
+	border-radius: 2px 0 0 2px;
+}
+#with_lists > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar {
+	margin-left: 5px;
+}
+#with_lists > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough {
+	margin-bottom: 8px;
+	box-shadow: 1px 1px 2px #4c4c4c;
+	background: #f6f6f6;
+	border: solid 1px #b5b5b5;
+	border-radius: 1px;
+}
+#with_lists > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough > progress {
+	background: #1d1d1d;
+	border: solid 1px #1d1d1d;
+}
+
+/* [EN] With search and lists */
+/* [FR] Avec recherche et listes */
+#with_search_and_lists {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#with_search_and_lists radio {
+	border: solid 1px lightgrey;
+}
+#with_search_and_lists radio:checked {
+	color: lightgrey;
+}
+/*#with_search_and_lists > #HBmain > #HBArtistPic {
+	margin-right: 5px;	
+}*/
+#with_search_and_lists > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Next,
+#with_search_and_lists > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Play,
+#with_search_and_lists > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Prev,
+#with_search_and_lists > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Stop {
+	margin-right: 5px;
+}
+#with_search_and_lists > #HBmain > #VBmain > #HBButtons > #HBButtons1 > button,
+#with_search_and_lists > #HBmain > #VBmain > #HBButtons > #HBButtons2 > button {
+	margin: 0;
+	padding: 0 2px;
+}
+#with_search_and_lists > #HBmain > #VBmain > #HBButtons > #HBButtons2 {
+	margin-bottom: 4px;
+}
+#with_search_and_lists > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #Button {
+	margin-right: 2px;
+}
+#with_search_and_lists > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #OpenBrowser,
+#with_search_and_lists > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #PluginRip {
+	margin: 0 2px;
+}
+#with_search_and_lists > #HBmain > #VBmain > #HBIndic {
+	margin: 0 0 -3px;
+}
+#with_search_and_lists > #HBmain > #VBmain > #HBIndic > #Filter > image,
+#with_search_and_lists > #HBmain > #VBmain > #HBIndic > #Queue > image,
+#with_search_and_lists > #HBmain > #VBmain > #HBIndic > #Sort > image {
+	margin-right: 5px;
+}
+#with_search_and_lists > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #LockSong > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-song.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_search_and_lists > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #LockAlbum > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-album.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_search_and_lists > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #LockArtist > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-artist.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_search_and_lists > #HBmain > #Cover > label,
+#with_search_and_lists > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #Title > label,
+#with_search_and_lists > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #Album > label,
+#with_search_and_lists > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #Artist > label {
+	padding-left: 5px;
+}
+#with_search_and_lists window > menu {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#with_search_and_lists window > menu > menuitem > label,
+#with_search_and_lists window > menu > menuitem > arrow {
+	color: white;
+}
+#with_search_and_lists > box > box > box > box > widget > label,
+#with_search_and_lists > box > box > box > widget > label {
+	color: white;
+	border-radius: 25px;
+}
+#with_search_and_lists > #VBmain > box > #HBmain > #VBmain > #HBTime {}
+#with_search_and_lists > #VBmain > box > #HBmain > #VBmain > #HBTime > #Time > label {
+	color: white;
+	text-shadow: 0 0 2px black;
+	margin-top: 3px;
+	border-radius: 2px;
+	background: #808080;
+}
+#with_search_and_lists > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #LabelsIcons {
+	margin: 0 0 0 0;
+	padding: 4px 7px 0 0;
+	background: #808080;
+	border-radius: 0 2px 2px 0
+}
+#with_search_and_lists > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #LabelsIcons image {
+	margin: 0px 0 0 5px;
+}
+#with_search_and_lists > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #Stars > image {
+	margin-left: 0;
+	padding: 0 3px;
+	background: #999999;
+	border-radius: 2px 0 0 2px;
+}
+#with_search_and_lists > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar {
+	margin-left: 5px;
+}
+#with_search_and_lists > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough {
+	margin-bottom: 8px;
+	box-shadow: 1px 1px 2px #4c4c4c;
+	background: #f6f6f6;
+	border: solid 1px #b5b5b5;
+	border-radius: 1px;
+}
+#with_search_and_lists > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough > progress {
+	background: #1d1d1d;
+	border: solid 1px #1d1d1d;
+}
+
+/* [EN] With search and lists 2 */
+/* [FR] Avec recherche et listes 2 */
+#with_search_and_lists_2 {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#with_search_and_lists2 radio {
+	border: solid 1px lightgrey;
+}
+#with_search_and_lists2 radio:checked {
+	color: lightgrey;
+}
+/*#with_search_and_lists_2 > #HBmain > #HBArtistPic {
+	margin-right: 5px;	
+}*/
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Next,
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Play,
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Prev,
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBButtons > #HBButtons1 > #Stop {
+	margin-right: 5px;
+}
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBButtons > #HBButtons1 > button,
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBButtons > #HBButtons2 > button {
+	margin: 0;
+	padding: 0 2px;
+}
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBButtons > #HBButtons2 {
+	margin-bottom: 4px;
+}
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #Button {
+	margin-right: 2px;
+}
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #OpenBrowser,
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBButtons > #HBButtons2 > #PluginRip {
+	margin: 0 2px;
+}
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBIndic {
+	margin: 0 0 -3px;
+}
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBIndic > #Filter > image,
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBIndic > #Queue > image,
+#with_search_and_lists_2 > #HBmain > #VBmain > #HBIndic > #Sort > image {
+	margin-right: 5px;
+}
+#with_search_and_lists_2 > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #LockSong > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-song.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_search_and_lists_2 > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #LockAlbum > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-album.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_search_and_lists_2 > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #LockArtist > image {
+	min-width: 30px;
+	margin-top: 1px;
+	padding: 0 0 0 16px;
+	background: grey, url("images/gmb-artist.png") 5px 5px no-repeat;
+	border-radius: 2px;
+}
+#with_search_and_lists_2 > #HBmain > #Cover > label,
+#with_search_and_lists_2 > #HBmain > #VBmain > #VBAlbum_Artist > #HBTitle > #Title > label,
+#with_search_and_lists_2 > #HBmain > #VBmain > #VBAlbum_Artist > #HBAlbum > #Album > label,
+#with_search_and_lists_2 > #HBmain > #VBmain > #VBAlbum_Artist > #HBArtist > #Artist > label {
+	padding-left: 5px;
+}
+#with_search_and_lists_2 window > menu {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#with_search_and_lists_2 window > menu > menuitem > label,
+#with_search_and_lists_2 window > menu > menuitem > arrow {
+	color: white;
+}
+#with_search_and_lists_2 > box > box > box > box > widget > label,
+#with_search_and_lists_2 > box > box > box > widget > label {
+	color: white;
+	border-radius: 25px;
+}
+#with_search_and_lists_2 > #VBmain > box > #HBmain > #VBmain > #HBTime {}
+#with_search_and_lists_2 > #VBmain > box > #HBmain > #VBmain > #HBTime > #Time > label {
+	color: white;
+	text-shadow: 0 0 2px black;
+	margin-top: 3px;
+	border-radius: 2px;
+	background: #808080;
+}
+#with_search_and_lists_2 > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #LabelsIcons {
+	margin: 0 0 0 0;
+	padding: 4px 7px 0 0;
+	background: #808080;
+	border-radius: 0 2px 2px 0
+}
+#with_search_and_lists_2 > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #LabelsIcons image {
+	margin: 0px 0 0 5px;
+}
+#with_search_and_lists_2 > #VBmain > box > #HBmain > #VBmain > #HBStarLab > #Stars > image {
+	margin-left: 0;
+	padding: 0 3px;
+	background: #999999;
+	border-radius: 2px 0 0 2px;
+}
+#with_search_and_lists_2 > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar {
+	margin-left: 5px;
+}
+#with_search_and_lists_2 > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough {
+	margin-bottom: 8px;
+	box-shadow: 1px 1px 2px #4c4c4c;
+	background: #f6f6f6;
+	border: solid 1px #b5b5b5;
+	border-radius: 1px;
+}
+#with_search_and_lists_2 > #VBmain > box > #HBmain > #VBmain > #HBTime > #TimeBar > progressbar > trough > progress {
+	background: #1d1d1d;
+	border: solid 1px #1d1d1d;
+}
+
+/* [EN] Minimal */
+/* [FR] Minimal */
+#minimal,
+#minimal menu {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#minimal label,
+#minimal arrow {
+	color: white;
+}
+#minimal radio {
+	border: solid 1px lightgrey;
+}
+#minimal radio:checked {
+	color: lightgrey;
+}
+#minimal > #HBmain > #MBMenu {
+	background-color: unset;
+	background-image: url("images/gmb-menu-light.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#minimal > #HBmain > #MBMenu > #SMMenu {
+	margin: 2px 5px;
+	padding: 5px;
+	min-width: 24px;
+	background-color: unset;
+	border-radius: 5px;
+}
+#minimal > #HBmain > #MBMenu > #SMMenu:hover {
+	background-color: unset;
+	box-shadow: inset 0 0 3px black;
+}
+#minimal > #HBmain > button {
+	margin: 2px;
+	background: unset;
+}
+#minimal > #HBmain > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+
+/* [EN] With browser - With browser (SongTree) - With browser & queue */
+/* [FR] Avec explorateur - Avec explorateur (arbre des morceaux) - Avec explorateur et file d'attente */
+#with_browser > #VBmain > #HPbig > #HPfp > #FilterPane:first-child notebook > stack > box > scrolledwindow,
+#with_browser_SongTree > #VBmain > #HPbig > #HPfp > #FilterPane:first-child notebook > stack > box > scrolledwindow,
+#with_browser_and_queue > #VBmain > #HPbig > #HPfp > #FilterPane:first-child notebook > stack > box > scrolledwindow {
+	padding: 0;
+	background: linear-gradient(rgb(228, 234, 244), rgb(189, 212, 252));
+}
+#with_browser > #VBmain > #HPbig > #HPfp > #FilterPane:last-child notebook > stack > box > scrolledwindow,
+#with_browser_SongTree > #VBmain > #HPbig > #HPfp > #FilterPane:last-child notebook > stack > box > scrolledwindow,
+#with_browser_and_queue > #VBmain > #HPbig > #HPfp > #FilterPane:last-child notebook > stack > box > scrolledwindow {
+	padding: 0;
+	background: linear-gradient(rgb(228, 234, 244) 39px, rgb(173, 203, 255));
+}
+#with_browser > #VBmain > #HPbig > #HPfp > #FilterPane notebook > stack > box > scrolledwindow > treeview > * ,
+#with_browser_SongTree > #VBmain > #HPbig > #HPfp > #FilterPane notebook > stack > box > scrolledwindow > treeview > * ,
+#with_browser_and_queue > #VBmain > #HPbig > #HPfp > #FilterPane notebook > stack > box > scrolledwindow > treeview > * {
+	background: unset;	
+}
+
+/* [EN] With browser */
+/* [FR] Avec explorateur */
+#with_browser > #VBmain > #HPbig window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#with_browser > #VBmain > #HPbig window > menu {
+	padding: 1px 0 2px;
+	background: linear-gradient(0deg,rgba(52, 70, 101, 1) 0%, rgba(158, 175, 204, 1) 100%);
+	box-shadow: unset;
+	border-radius: 8px;
+}
+#with_browser > #VBmain > #HPbig window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#with_browser > #VBmain > #HPbig window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#with_browser > #VBmain > #HPbig window > menu > menuitem > arrow,
+#with_browser > #VBmain > #HPbig window > menu > menuitem > check,
+#with_browser > #VBmain > #HPbig window > menu > menuitem > label,
+#with_browser > #VBmain > #HPbig window > menu > menuitem > radio {
+	color: white;
+}
+#with_browser > #VBmain > #HPbig window > menu > menuitem > radio,
+#with_browser > #VBmain > #HPbig window > menu > menuitem > check {
+	border: solid 1px white;
+}
+#with_browser slider:hover {
+	background: grey;
+}
+
+/* [EN] With browser (SongTree) */
+/* [FR] Avec explorateur (arbre des morceaux) */
+#with_browser_SongTree {}
+#with_browser_SongTree > #VBmain > #HPbig window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#with_browser_SongTree > #VBmain > #HPbig window > menu {
+	padding: 1px 0 2px;
+	background: linear-gradient(0deg,rgba(52, 70, 101, 1) 0%, rgba(158, 175, 204, 1) 100%);
+	box-shadow: unset;
+	border-radius: 8px;
+}
+#with_browser_SongTree > #VBmain > #HPbig window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#with_browser_SongTree > #VBmain > #HPbig window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#with_browser_SongTree > #VBmain > #HPbig window > menu > menuitem > arrow,
+#with_browser_SongTree > #VBmain > #HPbig window > menu > menuitem > check,
+#with_browser_SongTree > #VBmain > #HPbig window > menu > menuitem > label,
+#with_browser_SongTree > #VBmain > #HPbig window > menu > menuitem > radio {
+	color: white;
+}
+#with_browser_SongTree > #VBmain > #HPbig window > menu > menuitem > radio,
+#with_browser_SongTree > #VBmain > #HPbig window > menu > menuitem > check {
+	border: solid 1px white;
+}
+#with_browser_SongTree slider:hover {
+	background: grey;
+}
+
+/* [EN] With browser & queue */
+/* [FR] Avec explorateur et file d'attente */
+#with_browser_and_queue {}
+#with_browser_and_queue > #VBmain > #HPbig window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#with_browser_and_queue > #VBmain > #HPbig window > menu {
+	padding: 1px 0 2px;
+	background: linear-gradient(0deg,rgba(52, 70, 101, 1) 0%, rgba(158, 175, 204, 1) 100%);
+	box-shadow: unset;
+	border-radius: 8px;
+}
+#with_browser_and_queue > #VBmain > #HPbig window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#with_browser_and_queue > #VBmain > #HPbig window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#with_browser_and_queue > #VBmain > #HPbig window > menu > menuitem > arrow,
+#with_browser_and_queue > #VBmain > #HPbig window > menu > menuitem > check,
+#with_browser_and_queue > #VBmain > #HPbig window > menu > menuitem > label,
+#with_browser_and_queue > #VBmain > #HPbig window > menu > menuitem > radio {
+	color: white;
+}
+#with_browser_and_queue > #VBmain > #HPbig window > menu > menuitem > radio,
+#with_browser_and_queue > #VBmain > #HPbig window > menu > menuitem > check {
+	border: solid 1px white;
+}
+#with_browser_and_queue slider:hover {
+	background: grey;
+}
+
+/* [EN] Playlist */
+/* [FR] Liste de lecture */
+#Playlist {}

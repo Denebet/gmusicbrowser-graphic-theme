@@ -1,0 +1,149 @@
+/* [EN] Theme created by Loïc Guégant for gmusicbrowser, distributed under the GNU/GPL license. See README.odt file. */
+/* [FR] Thème créé par Loïc Guégant pour gmusicbrowser, distribué sous licence GNU/GPL. Voir fichier LISEZ-MOI.odt. */
+
+/* [EN] EQUALIZER */
+/* [FR] ÉGALISEUR */
+#Equalizer > headerbar {
+	padding: 0;
+	min-height: 28px;
+	background: #242424;
+	border: none;
+	border-radius: 5px 5px 0 0;
+}
+#Equalizer > headerbar > box {
+	all: unset;
+}
+#Equalizer > headerbar > box > button {
+	min-height: 10px;
+	min-width: 10px;
+	margin: 1px 5px 0 0;
+	padding: 3px;
+	background: #393939;
+	border: none;
+	border-radius: 15px;
+	box-shadow: unset;
+	-gtk-icon-shadow: unset;
+}
+#Equalizer > headerbar > box > button:hover {
+	background: #454545;
+	box-shadow: unset;
+}
+#Equalizer > headerbar > box > button > image {
+	color: white;
+}
+#Equalizer > headerbar > box > label {
+	color: white;
+}
+#Equalizer > #VBmain {
+	padding: 10px;
+	min-height: 300px;
+}
+#Equalizer label {
+	color: white;
+	font-size: 1.2em;
+}
+#Equalizer box {
+	background: #353535;
+}
+#Equalizer > #VBmain > #EqualizerPresets {
+	margin-bottom: 10px;
+}
+#Equalizer > #VBmain > #EqualizerPresets > button {
+	background: grey;
+	border: none;
+	box-shadow: 0 0 2px white;
+}
+#Equalizer > #VBmain > #EqualizerPresets box {/* [EN]  */ /* [FR] margin: 0; */}
+#Equalizer > #VBmain > #EqualizerPresets > box > button,
+#Equalizer > #VBmain > #EqualizerPresets > box > combobox {
+	margin-right: 10px;
+	background: grey;
+	border: none;
+	box-shadow: 0 0 2px white;
+}
+#Equalizer > #VBmain > #EqualizerPresets > box > box > entry,
+#Equalizer > #VBmain > #EqualizerPresets > box > box > button {
+	color: white;
+	caret-color: white;
+	margin-right: 2px;
+	background: grey;
+	border: none;
+	box-shadow: 0 0 2px white;
+}
+#Equalizer > #VBmain > #EqualizerPresets > box > combobox *:hover {
+	background: grey;
+}
+#Equalizer > #VBmain > #EqualizerPresets > button:hover,
+#Equalizer > #VBmain > #EqualizerPresets > box > button:hover,
+#Equalizer > #VBmain > #EqualizerPresets > box > box > button:hover,
+#Equalizer > #VBmain > #EqualizerPresets > box > combobox > box > button:hover,
+#Equalizer > #VBmain > #EqualizerPresets > box > box > button > box:hover,
+#Equalizer > #VBmain > #EqualizerPresets > box > box > button:hover > box,
+#Equalizer > #VBmain > #EqualizerPresets > box > combobox > box > button:hover > box > cellview,
+#Equalizer > #VBmain > #EqualizerPresets > box > combobox > box > button:hover > box > arrow,
+#Equalizer > #VBmain > #EqualizerPresets > box > box > button:hover > box > image,
+#Equalizer > #VBmain > #EqualizerPresets > box > box > button:hover > box > label,
+#Equalizer > #VBmain > #EqualizerPresets > box > box > button:hover > image {
+	background: #666666;
+}
+#Equalizer > #VBmain > #EqualizerPresets > box > combobox > box > button {
+	background: grey;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+#Equalizer > #VBmain > #EqualizerPresets > box > combobox > box > button > box,
+#Equalizer > #VBmain > #EqualizerPresets > box > box * {
+	background: grey;
+	border: none;
+}
+#Equalizer > #VBmain > #EqualizerPresets > box > combobox > box > button > box * {
+	color: white;
+}
+#Equalizer > #VBmain > #EqualizerPresets button label {
+	font-size: 1em;
+}
+
+#Equalizer > #VBmain > #Equalizer > box {
+	margin: 0 -2px;
+}
+#Equalizer > #VBmain > #Equalizer > box label {}
+#Equalizer > #VBmain > #Equalizer trough {
+	background: #4d4d4d;
+	border: solid 1px #4d4d4d;
+	margin: 0;
+	box-shadow: 0 0 0 #c8b898;
+}
+#Equalizer > #VBmain > #Equalizer > box > scale:hover {
+	background: #3d3d3d;
+}
+#Equalizer > #VBmain > #Equalizer scale slider {
+	border: none;
+	background: url("images/slider.png") center no-repeat;
+	min-height: 30px;
+	margin: 0 -20px 0 -20px;
+}
+#Equalizer > #VBmain > #Equalizer scale highlight {
+	background: #1fb5bb;
+	border: none;
+}
+#Equalizer > #VBmain > #EqualizerPresets > box > combobox > window > *,
+#Equalizer > #VBmain > #EqualizerPresets > box > box > entry > window > frame > box > scrolledwindow {
+	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+}
+#Equalizer > #VBmain > #EqualizerPresets > box > box > entry > window > frame > box > scrolledwindow > treeview,
+#Equalizer > #VBmain > #EqualizerPresets > box > box > entry > window > frame > box > scrolledwindow > treeview > * {
+	background: unset;
+}
+#Equalizer > #VBmain > #EqualizerPresets > box > combobox > window *,
+#Equalizer > #VBmain > #EqualizerPresets > box > box > entry > window * {
+	color: white;
+}
+#Equalizer > #VBmain > #EqualizerPresets > box > combobox > window > menu > menuitem:hover,
+#Equalizer > #VBmain > #EqualizerPresets > box > box > entry > window > frame > box > scrolledwindow > treeview > *:hover {
+	background: rgba(0, 0, 0, .3);
+}
+#Equalizer > #VBmain > #EqualizerPresets > box > box > entry > selection {
+	color: white;
+	background: #666;
+}

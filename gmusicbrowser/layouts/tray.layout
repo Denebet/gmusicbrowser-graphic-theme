@@ -1,0 +1,53 @@
+[Full_with_buttons]
+Type=T
+Name		= _"Complete traytip [Default]"
+Window= borderwidth=5
+VolumeScroll	= HBmain
+	HBmain		= HBArtistPic 2Filler1 _VBmain 2Filler2 -Cover(forceratio=1,click2=PopupCustom(CoverPopup))
+		HBArtistPic	= ArtistPic(click2=PopupCustom(ArtistPicPopup))
+		VBmain		= HBIndic HBButtons HBStarLab _VBText HBTime
+			HBIndic		= Filter Queue Pos(maxwidth=120) 5Sort
+			HBButtons	= HBButtons1 -HBButtons2
+			HBButtons1	= Prev Stop Play Next
+			HBButtons2	= -Quit(stock='gmb-quit',size=small-toolbar) \
+			-About(stock='gmb-about',size=small-toolbar,tip=_"About gmusicbrowser") \
+			-Pref(stock='gmb-preferences',size=small-toolbar) \
+			-ExtraButtons(size=small-toolbar) \
+			-Fullscreen(stock='gmb-fullscreen',size=small-toolbar) \
+			-OpenSearch(stock='gmb-find',size=small-toolbar,tip=_"Open Search window",toggle=1) \
+			-Button13(command=OpenCustom(PictureBrowser),stock='gmb-picture',size=small-toolbar,tip=_"Open Picture browser",toggle=1) \
+			#-OpenContext(stock='gmb-context',size=small-toolbar,tip=_"Open Context window",toggle=1) \
+			-OpenBrowser(stock='gmb-browser',size=small-toolbar,tip=_"Open Song browser",toggle=1) \
+			-VolumeIcon(size=small-toolbar) \
+			-Button(stock='gmb-equalizer',size=small-toolbar,tip=_"Open Equalizer",click1=OpenCustom(Equalizer))
+			HBStarLab	= Stars LabelsIcons -Year
+			VBText		= 2HBTitle 2HBAlbum 2HBArtist
+				HBTitle		= LockSong _Title(maxwidth=200)
+				HBAlbum		= LockAlbum _Album(maxwidth=200)
+				HBArtist	= LockArtist _Artist(maxwidth=200)
+			HBTime	= Time(tip=_"Toggle elapsed/remaining time") _TimeBar
+
+#[full] based on Full_with_buttons
+#Type=T
+#Name		= _"Normal"
+#HBButtons =
+#HBButtons1	=
+#HBButtons2	=
+#HBStarLab	=
+#VBmain		= HBIndic _VBText -HBTime
+
+[info]
+Type=T
+Name		= _"Small Traytip"
+HBAlbum		= _Album -Year
+VBText		= Title(30) HBAlbum Artist
+HBmain		= _VBText 2Filler1 -Cover
+VolumeScroll	= HBmain
+Window= borderwidth=5
+
+[minimaltip]
+Type=T
+Name		= _"Minimal"
+Window= borderwidth=0
+HBmain	= Play(size=menu) Next(size=menu) 2_TimeBar(text="%t by %a",minwidth=240) Cover
+Name= _"Minimal tip"

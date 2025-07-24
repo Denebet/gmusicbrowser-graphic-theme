@@ -1,0 +1,229 @@
+/* [EN] Theme created by Loïc Guégant for gmusicbrowser, distributed under the GNU/GPL license. See README.odt file. */
+/* [FR] Thème créé par Loïc Guégant pour gmusicbrowser, distribué sous licence GNU/GPL. Voir fichier LISEZ-MOI.odt. */
+
+/* [EN] Search with tabs [Default] */
+/* [FR] Recherche avec onglets [Par défaut] */
+#Search > #TBmain > header > tabs > tab {
+	margin: 0 2px;
+	padding: 0 5px;
+	color: white;
+	background: linear-gradient(0deg,rgba(50, 50, 50, .6) 0%, rgba(50, 50, 50, .3) 100%);
+}
+#Search > #TBmain > header > tabs > tab:hover {
+	margin: 0 2px;
+	padding: 0 5px;
+	background: linear-gradient(0deg,rgba(0, 0, 0, .9) 0%, rgba(50, 50, 50, .9) 100%);
+}
+#Search > #TBmain > header > tabs > tab:checked {
+	margin: 0 2px;
+	padding: 0 5px;
+	background: linear-gradient(0deg,rgba(0, 0, 0, .7) 0%, rgba(50, 50, 50, .5) 100%);
+}
+#Search > #TBmain > header > tabs > tab > label {
+	color: white;
+}
+#Search > #TBmain > header > tabs > tab:checked > label {
+	font-weight: bold
+}
+#Search > #TBmain > stack > box > box {
+	padding: 2px 5px;
+	background: linear-gradient(0deg,rgba(190, 185, 157, 1) 0%, rgba(230, 228, 218, 1) 100%);
+}
+#Search > #TBmain > stack > box > scrolledwindow {
+	min-height: 500px;
+	background: linear-gradient(0deg,rgba(190, 185, 157, 1) 0%, rgba(230, 228, 218, 1) 100%);
+}
+#Search > #TBmain > stack > box > scrolledwindow > treeview {
+	background: linear-gradient(0deg,rgba(190, 185, 157, 1) 0%, rgba(230, 228, 218, 1) 100%);
+}
+#Search > #TBmain > stack > box > scrolledwindow > treeview > * {
+	margin: 0;
+	padding: 1px;
+	background: rgba(0, 0, 0, .1);
+}
+#Search > #TBmain > stack > box > scrolledwindow > treeview > *:hover {
+	background: rgba(0, 0, 0, .3);
+}
+#Search > #TBmain > stack > box > scrolledwindow > treeview > *:selected {
+	background: rgba(0, 0, 0, .5);
+}
+#Search > #TBmain > stack > box > box > button {
+	background: rgba(0, 0, 0, .5);
+}
+#Search > #TBmain > stack > box > box > button:hover {
+	background: rgba(0, 0, 0, .7);
+}
+#Search > #TBmain > stack > box > box > button > box > label {
+	color: white;
+}
+#Search > #TBmain window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#Search > #TBmain window > menu {
+	padding: 1px 0 2px;
+	background: linear-gradient(0deg,rgba(92, 87, 61, 1) 0%, rgba(196, 191, 166, 1) 100%);
+	box-shadow: unset;
+	border-radius: 8px;
+}
+#Search > #TBmain window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#Search > #TBmain window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#Search > #TBmain window > menu > menuitem > arrow,
+#Search > #TBmain window > menu > menuitem > check,
+#Search > #TBmain window > menu > menuitem > label,
+#Search > #TBmain window > menu > menuitem > radio {
+	color: white;
+}
+#Search > #TBmain window > menu > menuitem > radio,
+#Search > #TBmain window > menu > menuitem > check {
+	border: solid 1px white;
+}
+
+
+/* [EN] Quick Search */
+/* [FR] Recherche rapide */
+#Quick_Search > #VBmain {
+	padding: 2px 5px;
+	min-width: 800px;
+	min-height: 500px;
+	background: linear-gradient(0deg,rgba(190, 185, 157, 1) 0%, rgba(230, 228, 218, 1) 100%);
+}
+#Quick_Search > #VBmain > #SimpleSearch {
+	margin: 0 0 2px;
+}
+#Quick_Search > #VBmain > scrolledwindow > treeview {
+	min-height: 500px;
+	background: unset;
+}
+#Quick_Search > #VBmain > scrolledwindow > treeview > * {
+	margin: 0;
+	padding: 1px;
+	background: rgba(255, 255, 255, .5);
+}
+#Quick_Search > #VBmain > scrolledwindow > treeview > *:hover {
+	background: rgba(0, 0, 0, .2);
+}
+#Quick_Search > #VBmain > scrolledwindow > treeview > *:selected {
+	background: rgba(0, 0, 0, .4);color: white;
+}
+#Quick_Search > #VBmain > scrolledwindow > treeview > header > button {
+	background: rgba(0, 0, 0, .6);
+}
+#Quick_Search > #VBmain > scrolledwindow > treeview > header > button > box > widget > label,
+#Quick_Search > #VBmain > scrolledwindow > treeview > header > button > box > image {
+	color: white;
+}
+#Quick_Search > #VBmain window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#Quick_Search > #VBmain window > menu {
+	padding: 1px 0 2px;
+	background: linear-gradient(0deg,rgba(92, 87, 61, 1) 0%, rgba(196, 191, 166, 1) 100%);
+	box-shadow: unset;
+	border-radius: 8px;
+}
+#Quick_Search > #VBmain window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#Quick_Search > #VBmain window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#Quick_Search > #VBmain window > menu > menuitem > arrow,
+#Quick_Search > #VBmain window > menu > menuitem > check,
+#Quick_Search > #VBmain window > menu > menuitem > label,
+#Quick_Search > #VBmain window > menu > menuitem > radio {
+	color: white;
+}
+#Quick_Search > #VBmain window > menu > menuitem > radio,
+#Quick_Search > #VBmain window > menu > menuitem > check {
+	border: solid 1px white;
+}
+
+/* [EN] Quick Search with SongTree */
+/* [FR] Recherche rapide avec arbre des morceaux */
+#Quick_Search_with_SongTree > #VBmain {
+	padding: 2px 0 0;
+	min-width: 800px;
+	min-height: 500px;
+	background: linear-gradient(0deg,rgba(190, 185, 157, 1) 0%, rgba(230, 228, 218, 1) 100%);
+}
+#Quick_Search_with_SongTree > #VBmain > #SimpleSearch {
+	margin: 0 5px 2px;
+}
+#Quick_Search_with_SongTree > #VBmain > #SongTree > box > treeview {
+	min-height: 500px;
+	background: unset;
+}
+#Quick_Search_with_SongTree > #VBmain > #SongTree > box > treeview > * {
+	margin: 0;
+	padding: 1px;
+	background: rgba(255, 255, 255, .5);
+}
+#Quick_Search_with_SongTree > #VBmain > #SongTree > box > treeview > *:selected {
+	color: white;
+	background: rgba(0, 0, 0, .4);
+}
+#Quick_Search_with_SongTree > #VBmain > #SongTree > box > treeview > header > button {
+	background: rgba(0, 0, 0, .6);
+}
+#Quick_Search_with_SongTree > #VBmain > #SongTree > box > treeview > header > button > box > widget > label,
+#Quick_Search_with_SongTree > #VBmain > #SongTree > box > treeview > header > button > box > image {
+	color: white;
+}
+#Quick_Search_with_SongTree > #VBmain > #SongTree > box > box {
+	padding: 2px;
+	background: rgba(0, 0, 0, .6);
+}
+#Quick_Search_with_SongTree > #VBmain > #SongTree > box > box > label,
+#Quick_Search_with_SongTree > #VBmain > #SongTree > box > box > button > box > label {
+	color: white;
+}
+#Quick_Search_with_SongTree > #VBmain > #SongTree > box > box > button {
+	background: unset;
+}
+#Quick_Search_with_SongTree > #VBmain > #SongTree > box > box > button:hover {
+	box-shadow: inset 0 0 4px black;
+}
+#Quick_Search_with_SongTree > #VBmain window > * {
+	box-shadow: 0 0 8px black;
+	border-radius: 8px;
+}
+#Quick_Search_with_SongTree > #VBmain window > menu {
+	padding: 1px 0 2px;
+	background: linear-gradient(0deg,rgba(92, 87, 61, 1) 0%, rgba(196, 191, 166, 1) 100%);
+	box-shadow: unset;
+	border-radius: 8px;
+}
+#Quick_Search_with_SongTree > #VBmain window > menu > menuitem {
+	margin: 2px 5px;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 15px;
+}
+#Quick_Search_with_SongTree > #VBmain window > menu > menuitem:hover {
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(255, 255, 255, .3), -2px -2px 2px rgba(255, 255, 255, .3), inset 2px 2px 5px rgba(0, 0, 0, .5), inset -2px -2px 5px rgba(0, 0, 0, .5);
+}
+#Quick_Search_with_SongTree > #VBmain window > menu > menuitem > arrow,
+#Quick_Search_with_SongTree > #VBmain window > menu > menuitem > check,
+#Quick_Search_with_SongTree > #VBmain window > menu > menuitem > label,
+#Quick_Search_with_SongTree > #VBmain window > menu > menuitem > radio {
+	color: white;
+}
+#Quick_Search_with_SongTree > #VBmain window > menu > menuitem > radio,
+#Quick_Search_with_SongTree > #VBmain window > menu > menuitem > check {
+	border: solid 1px white;
+}
