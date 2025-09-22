@@ -753,6 +753,14 @@
 		background: #e4eaf4;
 		background: linear-gradient(rgba(228, 234, 244, 1) 0%, rgba(143, 184, 255, 1) 100%);
 	}
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack > box > scrolledwindow > treeview > *:hover,
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > scrolledwindow > * > treeview:hover {
+			background: rgba(0, 0, 0, .1);
+		}
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #FilterPane > notebook > stack > box > scrolledwindow > treeview > *:selected,
+		#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > #FilterPane > notebook > stack > box > scrolledwindow > * > treeview:selected {
+			background: rgba(0, 0, 0, .2);
+		}
 	#3_Filter_panes > #VBmain > #HPbig > separator,
 	#3_Filter_panes > #VBmain > #HPbig > #HPfp > separator,
 	#3_Filter_panes > #VBmain > #HPbig > #HPfp > #HPfp2 > separator {
