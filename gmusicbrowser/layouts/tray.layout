@@ -1,7 +1,6 @@
 [Full_with_buttons]
 Type=T
 Name		= _"Complete traytip [Default]"
-Window= borderwidth=5
 VolumeScroll	= HBmain
 	HBmain		= HBArtistPic 2Filler1 _VBmain 2Filler2 -Cover(forceratio=1,click2=PopupCustom(CoverPopup))
 		HBArtistPic	= ArtistPic(click2=PopupCustom(ArtistPicPopup))

@@ -3,25 +3,27 @@ Type=S
 Default		= Window(size=320x540)
 Name		= _"Search with tabs [Default]"
 Title		= _"Search"
-TBmain		= _"Artist" ArtistSearch(buttons=1) _"Album" AlbumSearch(buttons=1) _"Song" SongSearch(activate=play,buttons=1)
+TBmain		= _"Quick Search" VBQuick_Search _"Quick Search with SongTree" VBQuick_Search_with_SongTree _"Artist" ArtistSearch(buttons=1) _"Album" AlbumSearch(buttons=1) _"Song" SongSearch(activate=play,buttons=1)
+	VBQuick_Search	= SimpleSearch(activate=SetFocusOn(SongList)) _SongList(activate=play&CloseWindow)
+	VBQuick_Search_with_SongTree	= SimpleSearch2(activate=SetFocusOn(SongTree)) _SongTree(activate=play&CloseWindow)
 DefaultFocus	= TBmain
 KeyBindings	= Escape CloseWindow
 
-[Quick_Search]
-Type=S
-Name		= _"Quick Search"
-Title		= _"Search"
-Default		= Window(size=620x540)
-VBmain		= SimpleSearch(activate=SetFocusOn(SongList)) _SongList(activate=play&CloseWindow)
-DefaultFocus	= SimpleSearch
-KeyBindings	= Escape CloseWindow
+#[Quick_Search]
+#Type=S
+#Name		= _"Quick Search"
+#Title		= _"Search"
+#Default		= Window(size=620x540)
+#VBmain		= SimpleSearch(activate=SetFocusOn(SongList)) _SongList(activate=play&CloseWindow)
+#DefaultFocus	= SimpleSearch
+#KeyBindings	= Escape CloseWindow
 
-[Quick_Search_with_SongTree]
-Type=S
-Name		= _"Quick Search with SongTree"
-Title		= _"Search"
-Default		= Window(size=620x540)
-VBmain		= SimpleSearch(activate=SetFocusOn(SongTree)) _SongTree(activate=play&CloseWindow)
-DefaultFocus	= SimpleSearch
-KeyBindings	= Escape CloseWindow
+#[Quick_Search_with_SongTree]
+#Type=S
+#Name		= _"Quick Search with SongTree"
+#Title		= _"Search"
+#Default		= Window(size=620x540)
+#VBmain		= SimpleSearch(activate=SetFocusOn(SongTree)) _SongTree(activate=play&CloseWindow)
+#DefaultFocus	= SimpleSearch
+#KeyBindings	= Escape CloseWindow
 

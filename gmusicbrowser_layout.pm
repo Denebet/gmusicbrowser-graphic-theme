@@ -155,7 +155,7 @@ our %Widgets=
 	},
 	Quit =>
 	{	class	=> 'Layout::Button',
-		stock	=> 'gtk-quit',
+		stock	=> 'gmb-quit',
 		tip	=> _"Quit",
 		activate	=> \&::Quit,
 		click2	=> 'EnqueueAction(quit)',

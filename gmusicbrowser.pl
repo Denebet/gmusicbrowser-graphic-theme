@@ -597,7 +597,7 @@ our %QActions=
 	'wait'	=> {order=>20, icon=>'gmb-wait',	short=> _"wait for more",	long=> _"Wait for more when queue empty",	action=>\&Stop,	changed=>\&QWaitAutoPlay,keep=>1,save=>1, },
 	stop	=> {order=>30, icon=>'gmb-media-stop-list',	short=> _"stop",		long=> _"Stop when queue empty",		action=>\&Stop,
 			can_next=>1, long_next=>_"Stop after this song", },
-	quit	=> {order=>40, icon=>'gtk-quit',	short=> _"quit",		long=> _"Quit when queue empty",		action=>\&Quit,
+	quit	=> {order=>40, icon=>'gmb-quit',	short=> _"quit",		long=> _"Quit when queue empty",		action=>\&Quit,
 			can_next=>1, long_next=>_"Quit after this song"},
 	turnoff => {order=>50, icon=>'gmb-turnoff',	short=> _"turn off",		long=> _"Turn off computer when queue empty", 	action=>sub {Stop(); TurnOff();},
 			condition=> sub { $::Options{Shutdown_cmd} }, can_next=>1, long_next=>_"Turn off computer after this song"},
@@ -6947,7 +6947,7 @@ sub PrefLayouts
 			  [ 'LayoutB','B',_"Browser window layout :", ],
 			  [ 'LayoutT','T',_"Tray tip window layout :", ],
 			  #[ 'LayoutF','F',_"Full screen layout :", ],
-			  [ 'LayoutS','S',_"Search window layout :", ],
+			  #[ 'LayoutS','S',_"Search window layout :", ],
 			)
 	{	my ($key,$type,$text,$cb)=@$layout;
 		my $combo= NewPrefLayoutCombo($key,$type,$text,$sg1,$sg2,$cb);

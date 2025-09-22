@@ -31,29 +31,29 @@ menuitem > check {
 checkbutton > check:hover {
 	background: rgba(255, 255, 255, .5);
 }
-/*checkbutton > check:checked {
-	background: white;
-}*/
-headerbar, headerbar * {
+scrolledwindow > scrollbar > contents > trough > slider:hover {
+	background: #666;
+}
+#Lists_Library_Context headerbar, #Lists_Library_Context headerbar * {
 	all: unset;
 }
-headerbar {
+#Lists_Library_Context headerbar {
 	min-height: 28px;
 	padding-bottom: 1px;
 	background: #242424;
 	color: white;
 	border-radius: 5px 5px 0 0;
 }
-headerbar > box > button {
+#Lists_Library_Context headerbar > box > button {
 	margin-top: -2px;
 	padding: 3px;
 	background: #393939;
 	border-radius: 15px;
 }
-headerbar > box > button:hover {
+#Lists_Library_Context headerbar > box > button:hover {
 	background: #454545;
 }
-headerbar > box > label {
+#Lists_Library_Context headerbar > box > label {
 	color: white;
 }
 window > menu {
@@ -119,7 +119,9 @@ box window > menu * {
 	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
 }
 #Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack > box window > menu,
-#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0> #HPfp1 > #FilterPane > notebook > stack > box window > menu {
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0> #HPfp1 > #FilterPane > notebook > stack > box window > menu,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack > scrolledwindow window > menu,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > scrolledwindow window > menu {
 	background: #344665;
 	background: linear-gradient(0deg,rgba(52, 70, 101, 1) 0%, rgba(158, 175, 204, 1) 100%);
 }
@@ -230,32 +232,50 @@ selection {
 	background: #d94a43;
 	box-shadow: inset 0 0 3px black, 0 0 2px lightgrey;
 }
-
-window > headerbar {
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > header > tabs > tab > label {
+	color: white
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > buttonbox {
+	background: black;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > buttonbox > button {
+	padding: 5px;
+	background: #333;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > buttonbox > button:hover {
+	padding: 5px;
+	background: #666;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #Context > stack > buttonbox > button > label {
+	color: white;
+}
+#Lists_Library_Context > headerbar {
 	color: white;
 	background: #242424;
 	border:none;
 	border-radius: unset;
 }
-window > headerbar > box > button {
+#Lists_Library_Context > headerbar > box > button {
 	background: #393939;
 }
-window > headerbar > box > button:hover {
+#Lists_Library_Context > headerbar > box > button:hover {
 	background: #454545;
 }
-window > headerbar > box > button > image {
+#Lists_Library_Context > headerbar > box > button > image {
 	color: white;
 }
-window > headerbar > box > label {
+#Lists_Library_Context > headerbar > box > label {
 	color: white;
 }
 
 dialog > box {
 	padding: 0 3px;
+	min-width: 400px;
 }
 dialog > box > box > box > entry {
 	min-width: 280px;
 }
+dialog > box > label,
 dialog > box > box > box > label,
 dialog > box > box > checkbutton label,
 dialog > box > box > grid > combobox > box > button > box *,
@@ -1477,7 +1497,7 @@ dialog stack {
 	background: linear-gradient(rgb(170,170,170), black 39px, rgb(228, 234, 244) 39px, rgb(173, 203, 255));
 }
 #Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #PictureBrowser > box {
-	margin: 0 -28 -28;
+	margin: 0 -28px -28px;
 	padding: 67px 25px 68px;
 	background: #372f1c;
 	box-shadow: inset 0 0 20px 20px black
@@ -1605,10 +1625,6 @@ background: unset;box-shadow: unset;
 		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane window > menu > menuitem > label {
 			color: white;
 		}
-		#Lists_Library_Context #FilterPane treeview:selected {
-			background: #b7c7e0;
- 			color: black;
-		}
 	/* [EN] [RIGHT] Panel buttons */
 	/* [FR] [DROITE] Boutons des panneaux */
 	#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane,
@@ -1703,8 +1719,20 @@ background: unset;box-shadow: unset;
 #Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > box > scrolledwindow > treeview,
 #Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > box > scrolledwindow,
 #Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack > box > scrolledwindow > treeview > *:not(:selected),
-#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > box > scrolledwindow > treeview > *:not(:selected) {
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > box > scrolledwindow > treeview > *:not(:selected),
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack > scrolledwindow > * > treeview,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > scrolledwindow > * > treeview {
 	background: unset;
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > scrolledwindow > treeview > *:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack > box > scrolledwindow > * > treeview:hover,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > box > scrolledwindow > * > treeview:hover {
+	background: rgba(0, 0, 0, .1);
+}
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > scrolledwindow > treeview > *:selected,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #FilterPane > notebook > stack > box > scrolledwindow > * > treeview:selected,
+#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > #HPfp1 > #FilterPane > notebook > stack > box > scrolledwindow > * > treeview:selected {
+	background: rgba(0, 0, 0, .2);
 }
 #Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #HPfp0 > separator {
 	margin: 0 -2px;
@@ -1803,9 +1831,9 @@ background: unset;box-shadow: unset;
 		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList > treeview > * {
 			background: unset;
 		}
-		/*#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList > treeview > *:hover {
+		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList > treeview > *:hover {
 			background: #ccc3b8;
-		}*/
+		}
 		#Lists_Library_Context > #VBmain > #HPmain > #TBRight > stack > #VPRight > #VBSongList > #SongList > treeview > *:selected {
  			 background: #b3a99d;
  			 color: #372f1c;
@@ -1987,11 +2015,17 @@ dialog > box > box > buttonbox > button:hover {
 #ChooseDir > box > box > buttonbox > button:hover {
 	box-shadow: inset 0 0 10px #333333;
 }
+#ChooseDir > box > filechooser > box > paned > placessidebar > viewport > list > row:selected {
+	background: #b3b3b3;
+}
 
 /* [EN] “Rename file” dialog */
 /* [FR] Dialogue « Renommer le fichier » */
 #Rename > box {
 	min-width: 320px;
+}
+#Rename > box > box > button > label {
+	color: white;
 }
 
 /* [EN] “Mass Renaming” dialog */
@@ -2371,6 +2405,9 @@ dialog > box > box > stack > box > label * {
 
 /* [EN] "Random mode edition" dialog */
 /* [FR] Dialogue « Édition des modes de hasard » */
+#EditWRandom > box {
+	min-height: 800px;
+}
 #EditWRandom > box > box > box > button > box > label,
 #EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > label,
 #EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > checkbutton > label,
@@ -2384,6 +2421,9 @@ dialog > box > box > stack > box > label * {
 #EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > combobox > box > button > box > cellview > * {
 	color: white;
 	text-shadow : none;
+}
+#EditWRandom > box > box > box > scrolledwindow {
+	min-width: 280px;
 }
 #EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > combobox > box > button > box >  arrow,
 #EditWRandom > box > box > box > scrolledwindow > viewport > grid > frame > box > box > grid > spinbutton > button {
@@ -2412,6 +2452,9 @@ dialog > box > box > stack > box > label * {
 
 /* [EN] "Filter edition" dialog */
 /* [FR] Dialogue « Édition de filtre » */
+#EditFilter > box {
+	min-height: 400px;
+}
 #EditFilter > box > box > box > widget > box > button > label,
 #EditFilter > box > box > box > widget > box > combobox > box > button > box *,
 #EditFilter > box > box > box > widget > box > combobox > box > button > box > cellview *,
@@ -2531,6 +2574,9 @@ dialog > box > box > stack > box > label * {
 #EditSort > box > box > box > button > box > label,
 #EditSort > box > box > box > grid > button > box > label {
 	color: white
+}
+#EditSort > box > box > box > scrolledwindow {
+	min-width: 240px;
 }
 
 /* [EN] Picture Browser */

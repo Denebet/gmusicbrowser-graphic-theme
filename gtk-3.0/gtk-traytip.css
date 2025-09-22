@@ -229,9 +229,6 @@ window radio,
 #Full_with_buttons {
 	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
 }
-/*#Full_with_buttons > #HBmain > #HBArtistPic {
-	margin-right: 5px;	
-}*/
 #Full_with_buttons > #HBmain > #Cover > window > * {
 	background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
 }

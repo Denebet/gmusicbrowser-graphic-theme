@@ -1,6 +1,6 @@
 [Lists_Library_Context]
 Type=G+
-Default	= Window(size=1280x960) VBLeft(size=500) VPRight(size=200-550)
+Default	= Window(size=1280x960) VBLeft(size=400) VPRight(size=200-550)
 DefaultFocus	= Play
 Name	= _"Complete player [Default]"
 VBmain	= _HPmain VBProgress
@@ -72,7 +72,7 @@ VBmain	= _HPmain VBProgress
 				HBPlayer	= VBartistPic #Button6(label=" ",tip=_"AC Artists ▸\n	LC Selection\n	RC Albums ▸\n		LC Selection\n		RC Tracks ▸\n			LC Selection\n			RC Context menu") \
 				_VBTime_SoundButtons_Text_Cover
 					VBartistPic	= VBartistPic2
-						VBartistPic2	= ArtistPic(minsize=123,click2=PopupCustom(ArtistPicPopup))
+						VBartistPic2	= ArtistPic(minsize=123,click2=PopupCustom(ArtistPicPopup),tip=_"Middle click to enlarge")
 					VBTime_SoundButtons_Text_Cover	= HBTime_SoundButtons HBTitle HBAlbum_Artist_Cover
 						HBTime_SoundButtons = Time(tip=_"Toggle elapsed/remaining time") \
 						_TimeBar \
@@ -80,11 +80,12 @@ VBmain	= _HPmain VBProgress
 						-Button1(stock='gmb-equalizer',size=large-toolbar,tip=_"Open Equalizer",click1=OpenCustom(Equalizer))
 						HBTitle	= LockSong(stock="on:gmb-lock gmb-locklight off:gmb-lockopen gmb-locklight") _Title -Year -LabelsIcons -Stars -#Button7(label=" ",tip=_"LC|MC Album tracks ▸\n	LC Selection\n	RC Context menu\nRC Context menu")
 						HBAlbum_Artist_Cover	= _VBAlbum_Artist \
-						-#Button10(label=" ",tip=_"LC Album tracks ▸\n	LC Selection\n	RC Context menu\nRC Context menu") -Cover(maxsize=57,overlay=6x6:350x350:elementary/overlay.png,default=elementary/no-cover.svg,showcover=0,click2=PopupCustom(CoverPopup))
+						-#Button10(label=" ",tip=_"LC Album tracks ▸\n	LC Selection\n	RC Context menu\nRC Context menu") -Cover(maxsize=57,overlay=6x6:350x350:elementary/overlay.png,default=elementary/no-cover.svg,showcover=0,click2=PopupCustom(CoverPopup),tip=_"Middle click to enlarge")
 							VBAlbum_Artist	= 2HBAlbum 2HBArtist
 								HBAlbum	= LockAlbum(stock="on:gmb-lock gmb-locklight off:gmb-lockopen gmb-locklight") _Album -#Button8(label=" ",tip=_"LC|MC Artist albums / Album artists ▸ Albums\n	LC Selection\n	RC Tracks\n		LC Selection\n		RC Context menu\nRC Context menu")
 								HBArtist	= LockArtist(stock="on:gmb-lock gmb-locklight off:gmb-lockopen gmb-locklight") _Artist -#Button9(label=" ",tip=_"LC|MC Artists ▸\n	LC Selection\n	RC Albums ▸\n		LC Selection\n		RC Tracks ▸\n			LC Selection\n			RC Context menu\nRC Context menu")
-		TBRight	= (tablist=0) _"Album pictures" PictureBrowser _"Library" VPRight
+		#TBRight	= (tablist=0) _"Context" Context _"Library" VPRight
+		TBRight	= (tablist=0) _"Album pictures" PictureBrowser(size=small-toolbar) _"Library" VPRight
 			VPRight	= HPfp0 _VBSongList
 				HPfp0	= FilterPane0(nb=1,hidebb=0,page=genre) HPfp1
 					HPfp1	= FilterPane1(nb=2,hidebb=0,page=artist,page_artist/lmarkup=1) \
